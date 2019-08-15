@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".MiCuenta">
+
+        </activity>
         <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
