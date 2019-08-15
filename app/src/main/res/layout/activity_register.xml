@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:background="@drawable/ic_fondolleno"
+        android:text="CANCELAR"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/ic_fondolleno"
+        android:text="INGRESAR"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelar"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_cuadro"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="50dp"
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario" />
+
+    <EditText
+        android:id="@+id/editTextContraseña2"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_cuadro"
+        android:ems="10"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="50dp"
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextContraseña"
+        app:layout_constraintStart_toStartOf="@+id/editTextContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_cuadro"
+        android:hint="Nombre de Usuario"
+        android:paddingLeft="50dp"
+        android:paddingTop="12dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSesion4" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
+        app:layout_constraintTop_toTopOf="@+id/textViewUsuario"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_usuariologo" />
+
+    <TextView
+        android:id="@+id/textViewSesion4"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="42dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Registrate"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="253dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logobioazul" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_cuadro"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="50dp"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextContraseña2"
+        app:layout_constraintStart_toStartOf="@+id/editTextContraseña2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña2" />
+
+    <ImageView
+        android:id="@+id/candado"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextContraseña"
+        app:layout_constraintStart_toStartOf="@+id/editTextContraseña"
+        app:layout_constraintTop_toTopOf="@+id/editTextContraseña"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_candado" />
+
+    <ImageView
+        android:id="@+id/candado2"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextContraseña2"
+        app:layout_constraintStart_toStartOf="@+id/editTextContraseña2"
+        app:layout_constraintTop_toTopOf="@+id/editTextContraseña2"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_candado" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCorreo"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreo"
+        app:layout_constraintTop_toTopOf="@+id/editTextCorreo"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_correo" />
+
+</android.support.constraint.ConstraintLayout>
