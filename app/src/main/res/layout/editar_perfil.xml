@@ -172,7 +172,7 @@
 
     <RadioGroup
         android:id="@+id/generoRadioGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -199,4 +199,71 @@
             android:button="@drawable/ic_rb_not_cheked"
             android:text="Femenino" />
     </RadioGroup>
+    <EditText
+        android:id="@+id/editTextCambiarFechaNacimiento"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_cuadro"
+        android:ems="10"
+        android:hint="00/00/00"
+        android:inputType="date"
+        android:paddingLeft="50dp"
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generoRadioGroup" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCambiarFechaNacimiento"
+        app:layout_constraintStart_toStartOf="@+id/editTextCambiarFechaNacimiento"
+        app:layout_constraintTop_toTopOf="@+id/editTextCambiarFechaNacimiento"
+        app:srcCompat="@drawable/ic_fecha" />
+
+    <EditText
+        android:id="@+id/editTextCambiarLugarOrigen"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_cuadro"
+        android:ems="10"
+        android:hint="Peru"
+        android:inputType="text"
+        android:paddingLeft="50dp"
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCambiarFechaNacimiento" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCambiarLugarOrigen"
+        app:layout_constraintStart_toStartOf="@+id/editTextCambiarLugarOrigen"
+        app:layout_constraintTop_toTopOf="@+id/editTextCambiarLugarOrigen"
+        app:srcCompat="@drawable/ic_lugar" />
+
+    <Button
+        android:id="@+id/buttonCerrarSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_fondolleno"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCambiarLugarOrigen"
+        app:layout_constraintStart_toStartOf="@+id/editTextCambiarLugarOrigen"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCambiarLugarOrigen" />
+
+
 </android.support.constraint.ConstraintLayout>
