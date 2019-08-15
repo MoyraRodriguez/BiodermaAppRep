@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInActivity">
+    tools:context=".LogInActivity"
+    android:background="#ffff">
 
     <TextView
         android:id="@+id/textViewSesion"
@@ -117,12 +118,25 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="196dp"
+        android:layout_width="164dp"
         android:layout_height="23dp"
         android:text="¿Olvidaste tu contraseña? "
         android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="610dp" />
+
+    <Button
+        android:id="@+id/BtnRecuperarCuenta"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="128dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="2dp"
+        android:background="#ffff"
+        android:text="Recuperala aqui"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        android:textColor="#334B68"/>
 
 
 </android.support.constraint.ConstraintLayout>
