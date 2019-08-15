@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Usuario"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_cuadrado"
@@ -41,9 +40,9 @@
         android:layout_height="21dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toBottomOf="@+id/textUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textUsuario"
+        app:layout_constraintTop_toTopOf="@+id/textUsuario"
         app:layout_constraintVertical_bias="0.586"
         app:srcCompat="@drawable/ic_usuariologo" />
 
@@ -57,8 +56,8 @@
         android:inputType="textPassword"
         android:paddingLeft="50dp"
         android:paddingTop="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/textUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textUsuario"
         tools:layout_editor_absoluteY="319dp" />
 
     <ImageView
@@ -130,7 +129,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/textUsuario"
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:background="@drawable/ic_cuadro"

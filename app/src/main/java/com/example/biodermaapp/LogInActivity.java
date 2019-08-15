@@ -15,7 +15,7 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-        Usuario = findViewById(R.id.Usuario);
+        Usuario = findViewById(R.id.textUsuario);
 
         GotoRecuperarCuenta();
 
