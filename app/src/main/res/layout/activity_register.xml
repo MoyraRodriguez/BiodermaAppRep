@@ -40,9 +40,9 @@
         android:inputType="textPassword"
         android:paddingLeft="50dp"
         android:paddingTop="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewUsuario"
-        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario" />
+        app:layout_constraintEnd_toEndOf="@+id/Usuario"
+        app:layout_constraintStart_toStartOf="@+id/Usuario"
+        app:layout_constraintTop_toBottomOf="@+id/Usuario" />
 
     <EditText
         android:id="@+id/editTextContraseña2"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
 
     <TextView
-        android:id="@+id/textViewUsuario"
+        android:id="@+id/Usuario"
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -81,9 +81,9 @@
         android:layout_width="19dp"
         android:layout_height="21dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewUsuario"
-        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
-        app:layout_constraintTop_toTopOf="@+id/textViewUsuario"
+        app:layout_constraintBottom_toBottomOf="@+id/Usuario"
+        app:layout_constraintStart_toStartOf="@+id/Usuario"
+        app:layout_constraintTop_toTopOf="@+id/Usuario"
         app:layout_constraintVertical_bias="0.517"
         app:srcCompat="@drawable/ic_usuariologo" />
 
