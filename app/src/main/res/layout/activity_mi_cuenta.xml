@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MiCuenta">
 
+    <TextView
+        android:id="@+id/linea3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/blue_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreClienteMiCuenta" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="220dp"
@@ -17,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linea"
-        app:srcCompat="@drawable/ic_logo_mi_cuenta_principal" />
+        app:srcCompat="@drawable/ic_logo_mi_cuenta_principal"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/textView"
@@ -59,13 +71,15 @@
     <TextView
         android:id="@+id/linea2"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/blue_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreClienteMiCuenta" />
+        app:layout_constraintTop_toBottomOf="@+id/telefonoMICuenta" />
 
     <TextView
         android:id="@+id/correoClienteMiCuenta"
@@ -84,11 +98,12 @@
         android:id="@+id/imageView3"
         android:layout_width="26dp"
         android:layout_height="39dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea2"
-        app:srcCompat="@drawable/ic_correo" />
+        app:layout_constraintTop_toBottomOf="@+id/linea3"
+        app:srcCompat="@drawable/ic_correo"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/nombreClienteMiCuenta"
@@ -119,10 +134,77 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="33dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/ic_telefono"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="616dp" />
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoClienteMiCuenta"
+        app:srcCompat="@drawable/ic_telefono" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Teléfono Celular"
+        android:textColor="@color/principalBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/telefonoMICuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageGeneroMiCuenta"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea2"
+        app:srcCompat="@drawable/ic_genero_otro" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Genero"
+        android:textColor="@color/principalBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGeneroMiCuenta" />
+
+    <TextView
+        android:id="@+id/generoMICuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="8sp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
 </android.support.constraint.ConstraintLayout>

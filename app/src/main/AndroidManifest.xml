@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecuperarCuentaActivity"></activity>
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".MiCuenta">
+
+        </activity>
         <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
