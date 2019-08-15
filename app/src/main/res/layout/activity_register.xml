@@ -8,24 +8,26 @@
 
     <Button
         android:id="@+id/buttonCancelar"
-        android:layout_width="160dp"
-        android:layout_height="49dp"
+        android:layout_width="121dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/ic_fondolleno"
         android:text="CANCELAR"
         android:textColor="@color/colorAccent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <Button
         android:id="@+id/buttonIngresar"
-        android:layout_width="160dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="28dp"
+        android:layout_width="121dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/ic_fondolleno"
         android:text="INGRESAR"
         android:textColor="@color/colorAccent"
-        app:layout_constraintStart_toEndOf="@+id/buttonCancelar"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <EditText
         android:id="@+id/editTextContraseña"
