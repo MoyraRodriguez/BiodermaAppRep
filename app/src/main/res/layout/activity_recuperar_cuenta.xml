@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperarCuentaActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCorreo2"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreo2"
+        app:layout_constraintTop_toTopOf="@+id/editTextCorreo2"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_correo" />
+
+    <EditText
+        android:id="@+id/editTextCorreo2"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_cuadrado"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="50dp"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="253dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logobioazul" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Ingresa tu correo electronico"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="204dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:text="Ingresa tu correo electronico"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCorreo2"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreo2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo2"
+        tools:text="Enviaremos un mensaje a este correo con su nueva contraseña" />
+
+</android.support.constraint.ConstraintLayout>
