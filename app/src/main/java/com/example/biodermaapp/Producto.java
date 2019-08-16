@@ -2,7 +2,6 @@ package com.example.biodermaapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,7 +23,7 @@ public class Producto extends AppCompatActivity {
         buttonInformacion = findViewById(R.id.buttonInfoProducto);
         buttonProductoComplementario = findViewById(R.id.buttonProductoComplementario);
         nombreProducto = findViewById(R.id.tvNombreProducto);
-        nombreComplementario = findViewById(R.id.tvNombreProductoComplementario);
+        nombreComplementario = findViewById(R.id.layout);
         dataProducto = findViewById(R.id.tvProductoData);
         consejos = findViewById(R.id.tvConsejosUso);
         imagenProducto = findViewById(R.id.imageProducto);
