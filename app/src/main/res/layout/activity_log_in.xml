@@ -121,13 +121,26 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="130dp"
         android:layout_height="25dp"
-        android:layout_marginStart="2dp"
+        android:layout_marginStart="4dp"
         android:background="#ffff"
         android:text="Recuperala aqui"
         android:textColor="#334B68"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="93dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffff"
+        android:text="Registrate"
+        android:textColor="#334B68"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/textUsuario"
@@ -142,10 +155,10 @@
         app:layout_constraintEnd_toEndOf="@+id/textViewSesion"
         app:layout_constraintStart_toStartOf="@+id/textViewSesion"
         app:layout_constraintTop_toBottomOf="@+id/textViewSesion" />
-"
-        app:layout_constraintEnd_toEndOf="@+id/textViewSesion"
-        app:layout_constraintStart_toStartOf="@+id/textViewSesion"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSesion" />
+    "
+    app:layout_constraintEnd_toEndOf="@+id/textViewSesion"
+    app:layout_constraintStart_toStartOf="@+id/textViewSesion"
+    app:layout_constraintTop_toBottomOf="@+id/textViewSesion" />
 
 
 </android.support.constraint.ConstraintLayout>

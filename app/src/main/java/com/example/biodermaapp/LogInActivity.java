@@ -18,6 +18,8 @@ public class LogInActivity extends AppCompatActivity {
 
 
         GotoRecuperarCuenta();
+        GotoRegistrarse();
+        GotoIngresar();
 
 
     }
@@ -31,6 +33,27 @@ public class LogInActivity extends AppCompatActivity {
 
                 startActivity(new Intent(LogInActivity.this,RecuperarCuentaActivity.class));
 
+            }
+        });
+
+    }
+
+    private void GotoIngresar(){
+        BtnIngresar = findViewById(R.id.buttonlogin);
+        BtnIngresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LogInActivity.this,HomeActivity.class));
+            }
+        });
+    }
+
+    private void GotoRegistrarse(){
+        BtnRegistrarse = findViewById(R.id.btnRegistrarse);
+        BtnRegistrarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LogInActivity.this,RegisterActivity.class));
             }
         });
 

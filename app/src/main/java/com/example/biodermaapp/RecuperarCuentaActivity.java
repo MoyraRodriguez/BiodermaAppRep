@@ -32,12 +32,12 @@ public class RecuperarCuentaActivity extends AppCompatActivity {
 
                 //si el correo es aceptado CorreoConfirmado pasa a ser true
 
-                if(CorreoConfirmado = false) {
+
 
                     ShowPopUpWaiting();
-                } else {
+
                     ShowPopUpActive();
-                }
+
             }
         });
     }
