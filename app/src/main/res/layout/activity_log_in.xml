@@ -4,37 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInActivity"
-    android:background="#ffff">
+    android:background="@drawable/ic_cuadrado"
+    tools:context=".LogInActivity">
 
     <TextView
         android:id="@+id/textViewSesion"
-        android:layout_width="107dp"
-        android:layout_height="25dp"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
         android:layout_marginTop="60dp"
         android:background="@color/colorAccent"
         android:text="Iniciar sesion"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <TextView
-        android:id="@+id/textViewUsuario"
-        android:layout_width="307dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/ic_cuadro"
-        android:hint="Nombre de Usuario"
-        android:paddingLeft="50dp"
-        android:paddingTop="12dp"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSesion" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -53,26 +39,27 @@
         android:layout_width="19dp"
         android:layout_height="21dp"
         android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewUsuario"
-        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
-        app:layout_constraintTop_toTopOf="@+id/textViewUsuario"
-        app:layout_constraintVertical_bias="0.517"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textUsuario"
+        app:layout_constraintTop_toTopOf="@+id/textUsuario"
+        app:layout_constraintVertical_bias="0.586"
         app:srcCompat="@drawable/ic_usuariologo" />
 
     <EditText
         android:id="@+id/editTextContraseña"
         android:layout_width="307dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/ic_cuadro"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
         android:paddingLeft="50dp"
         android:paddingTop="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewUsuario"
-        app:layout_constraintStart_toStartOf="@+id/textViewUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario" />
+        app:layout_constraintEnd_toEndOf="@+id/textUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/textUsuario" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -89,10 +76,10 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="-10dp"
         android:layout_marginTop="12dp"
         android:text="Recuerdame"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextContraseña"
         app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
 
     <Button
@@ -111,32 +98,54 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:text="¿No tienes cuenta?"
         android:textColor="@android:color/black"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="642dp" />
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="164dp"
         android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:text="¿Olvidaste tu contraseña? "
         android:textColor="@android:color/black"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="610dp" />
+        app:layout_constraintStart_toStartOf="@+id/buttonlogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
 
     <Button
         android:id="@+id/BtnRecuperarCuenta"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="128dp"
-        android:layout_height="22dp"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
         android:layout_marginStart="2dp"
         android:background="#ffff"
         android:text="Recuperala aqui"
+        android:textColor="#334B68"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        android:textColor="#334B68"/>
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/textUsuario"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_cuadro"
+        android:ems="10"
+        android:hint="Nombre de Usuario"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSesion"
+        app:layout_constraintStart_toStartOf="@+id/textViewSesion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSesion" />
+"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSesion"
+        app:layout_constraintStart_toStartOf="@+id/textViewSesion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSesion" />
 
 
 </android.support.constraint.ConstraintLayout>
