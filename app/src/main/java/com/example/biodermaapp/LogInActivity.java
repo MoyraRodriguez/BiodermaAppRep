@@ -10,12 +10,12 @@ import android.widget.TextView;
 public class LogInActivity extends AppCompatActivity {
 
     Button BtnRecuperarCuenta, BtnRegistrarse, BtnIngresar;
-    TextView Usuario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-        Usuario = findViewById(R.id.textUsuario);
+
 
         GotoRecuperarCuenta();
 
