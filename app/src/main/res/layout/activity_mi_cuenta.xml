@@ -350,5 +350,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonEditarCuenta" />
 
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCerrarSesion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonCerrarSesion"
+            app:menu="@menu/botton_navigation">
+
+
+        </android.support.design.widget.BottomNavigationView>
+
     </android.support.constraint.ConstraintLayout>
+
 </ScrollView>
