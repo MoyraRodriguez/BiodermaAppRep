@@ -12,14 +12,15 @@
     tools:visibility="visible">
 
     <android.support.design.widget.BottomNavigationView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/botton_navigation">
+        app:menu="@menu/botton_navigation"
+        android:background="#334D6B">
 
 
     </android.support.design.widget.BottomNavigationView>

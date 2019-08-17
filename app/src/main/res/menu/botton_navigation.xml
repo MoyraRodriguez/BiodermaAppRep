@@ -16,9 +16,9 @@
         android:title="Scanner"/>
 
     <item
-        android:id="@+id/Historial"
+        android:id="@+id/Home"
         android:icon="@drawable/ic_candado"
-        android:title="Historial"/>
+        android:title="Home"/>
 
     <item
         android:id="@+id/Club"

@@ -23,7 +23,7 @@ public class Producto extends AppCompatActivity {
         buttonInformacion = findViewById(R.id.buttonInfoProducto);
         buttonProductoComplementario = findViewById(R.id.buttonProductoComplementario);
         nombreProducto = findViewById(R.id.tvNombreProducto);
-        nombreComplementario = findViewById(R.id.layout);
+        nombreComplementario = findViewById(R.id.tvNombreProductoComplementario);
         dataProducto = findViewById(R.id.tvProductoData);
         consejos = findViewById(R.id.tvConsejosUso);
         imagenProducto = findViewById(R.id.imageProducto);
