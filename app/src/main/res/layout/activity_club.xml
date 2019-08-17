@@ -29,7 +29,9 @@
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -77,8 +79,7 @@
                 android:background="@drawable/blue_rectangle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                />
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <TextView
                 android:id="@+id/linea9"
@@ -89,7 +90,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                app:layout_constraintTop_toBottomOf="@+id/DescNivel" />
 
             <TextView
                 android:id="@+id/linea10"
@@ -100,7 +101,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/correoClienteMiCuenta" />
+                app:layout_constraintTop_toBottomOf="@+id/SaldoBioCoins" />
 
             <TextView
                 android:id="@+id/linea11"
@@ -113,7 +114,7 @@
                 tools:layout_editor_absoluteY="507dp" />
 
             <TextView
-                android:id="@+id/correoClienteMiCuenta"
+                android:id="@+id/SaldoBioCoins"
                 android:layout_width="140dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
@@ -121,26 +122,26 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="35dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView7"
                 app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <TextView
-                android:id="@+id/nombreClienteMiCuenta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:id="@+id/NombreNivel"
+                android:layout_width="106dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:gravity="center"
                 android:text="Bronce"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/NivelBronce" />
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintHorizontal_bias="0.388"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/Nivel" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -151,8 +152,8 @@
                 android:textColor="@color/principalBlue"
                 android:textSize="15dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="@+id/imageView17"
                 app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
             <TextView
@@ -165,6 +166,7 @@
                 android:textColor="@color/principalBlue"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linea11"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linea10" />
 
@@ -180,55 +182,29 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="696dp" />
 
-            <ImageView
-                android:id="@+id/imageFechaNacMiCuenta"
-                android:layout_width="47dp"
-                android:layout_height="38dp"
-                android:layout_marginTop="32dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linea4"
-                app:srcCompat="@drawable/ic_fecha"
-                tools:ignore="VectorDrawableCompat" />
-
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="Fecha de Nacimiento"
                 android:textColor="@color/principalBlue"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageFechaNacMiCuenta" />
-
-            <TextView
-                android:id="@+id/fechaNacMICuenta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:lineSpacingExtra="8sp"
-                android:text="TextView"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                tools:layout_editor_absoluteY="776dp" />
 
             <TextView
                 android:id="@+id/linea5"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/blue_rectangle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fechaNacMICuenta" />
+                tools:layout_editor_absoluteY="856dp" />
 
             <ImageView
                 android:id="@+id/imageLugarOrigen"
@@ -267,34 +243,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-            <Button
-                android:id="@+id/buttonEditarCuenta"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="35dp"
-                android:background="@drawable/ic_fondolleno"
-                android:text="Editar mi Perfil"
-                android:textColor="@color/colorAccent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lugarOrigenMICuenta" />
-
-            <Button
-                android:id="@+id/buttonCerrarSesion"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="64dp"
-                android:background="@drawable/ic_fondolleno"
-                android:text="Cerrar Sesion"
-                android:textColor="@color/colorAccent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonEditarCuenta" />
-
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="78dp"
@@ -307,47 +255,48 @@
                 app:srcCompat="@drawable/ic_barraclub" />
 
             <ImageView
-                android:id="@+id/NivelBronce"
+                android:id="@+id/Nivel"
                 android:layout_width="56dp"
                 android:layout_height="61dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="@+id/linea"
-                app:layout_constraintTop_toBottomOf="@+id/linea"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintHorizontal_bias="0.785"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15"
                 app:srcCompat="@drawable/ic_bronceclub" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/CantidadCoins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="38dp"
+                android:layout_marginEnd="16dp"
                 android:text="TextView"
                 android:textColor="#000"
-                app:layout_constraintBottom_toBottomOf="@+id/NivelBronce"
+                app:layout_constraintBottom_toBottomOf="@+id/Nivel"
+                app:layout_constraintEnd_toStartOf="@+id/Nivel"
                 app:layout_constraintTop_toTopOf="@+id/imageView15"
-                app:layout_constraintVertical_bias="1.0"
-                tools:layout_editor_absoluteX="99dp" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/DescNivel"
                 android:layout_width="203dp"
                 android:layout_height="39dp"
                 android:layout_marginTop="4dp"
                 android:text="Consigue 100 BioCoins para llegar a plata"
                 android:textAlignment="center"
                 android:textColor="#000"
-                app:layout_constraintEnd_toEndOf="@+id/nombreClienteMiCuenta"
-                app:layout_constraintStart_toStartOf="@+id/nombreClienteMiCuenta"
-                app:layout_constraintTop_toBottomOf="@+id/nombreClienteMiCuenta" />
+                app:layout_constraintEnd_toEndOf="@+id/NombreNivel"
+                app:layout_constraintStart_toStartOf="@+id/NombreNivel"
+                app:layout_constraintTop_toBottomOf="@+id/NombreNivel" />
 
             <ImageView
                 android:id="@+id/imageView17"
                 android:layout_width="31dp"
                 android:layout_height="28dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="@+id/linea9"
                 app:layout_constraintStart_toStartOf="@+id/linea9"
                 app:layout_constraintTop_toBottomOf="@+id/linea9"
