@@ -43,7 +43,7 @@ public class clubActivity extends AppCompatActivity {
 
         //de plata a oro
         if(BionCoins >= 2500 && BionCoins < 5000){
-            Icono.setImageDrawable(getDrawable(R.drawable.ic_plata_no_seleccionado));
+            Icono.setImageDrawable(getDrawable(R.drawable.ic_oro_no_seleccionado));
             NombreNivel.setText("Oro");
             DescripNivel.setText("Consigue 5000 BioCoins para llegar a platino");
 
@@ -59,7 +59,7 @@ public class clubActivity extends AppCompatActivity {
 
         //de platino a diamante
         if(BionCoins >= 7500 ){
-            Icono.setImageDrawable(getDrawable(R.drawable.ic_plata_no_seleccionado));
+            Icono.setImageDrawable(getDrawable(R.drawable.ic_diamante_no_seleccionado));
             NombreNivel.setText("Diamante");
             DescripNivel.setText("Felicidades tienes el nivel mas alto");
 
