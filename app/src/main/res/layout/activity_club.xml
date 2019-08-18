@@ -114,6 +114,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="507dp" />
 
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/Recycle"
+
+
+                >
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
             <TextView
                 android:id="@+id/SaldoBioCoins"
                 android:layout_width="140dp"

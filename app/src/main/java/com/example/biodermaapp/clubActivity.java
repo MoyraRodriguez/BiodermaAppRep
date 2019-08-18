@@ -4,11 +4,13 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class clubActivity extends AppCompatActivity {
     int BionCoins = 1500;
+    private RecyclerView recyclerView;
     TextView CantidadBioncoins, NombreNivel, DescripNivel;
     ImageView Icono;
 
@@ -23,6 +25,26 @@ public class clubActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+
+
+    private void Recycle(){
+        recyclerView = findViewById(R.id.Recycle);
+        int[] images = {R.drawable.ic_bronce_no_seleccionado,
+                R.drawable.ic_plata_no_seleccionado,
+                R.drawable.ic_oro_no_seleccionado,
+                R.drawable.ic_platino_no_seleccionado,
+                R.drawable.ic_diamante_no_seleccionado
+
+
+        };
+    }
+
+
+
+
+
+
+
     private void SubidaDeNivel(){
 
         NombreNivel = findViewById(R.id.NombreNivel);
