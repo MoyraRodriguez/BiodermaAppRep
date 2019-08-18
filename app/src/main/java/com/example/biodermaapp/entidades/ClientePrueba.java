@@ -85,4 +85,12 @@ public class ClientePrueba {
     public void setLugarResidencia(String lugarResidencia) {
         this.lugarResidencia = lugarResidencia;
     }
+
+    public int getBioCoins() {
+        return BioCoins;
+    }
+
+    public void setBioCoins(int bioCoins) {
+        BioCoins = bioCoins;
+    }
 }

@@ -8,8 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.biodermaapp.entidades.ClientePrueba;
+
 public class clubActivity extends AppCompatActivity {
-    int BionCoins = 1500;
+    int BionCoins;
+    private ClientePrueba cliente;
     private RecyclerView recyclerView;
     TextView CantidadBioncoins, NombreNivel, DescripNivel;
     ImageView Icono;
@@ -21,7 +24,9 @@ public class clubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club);
         SubidaDeNivel();
-
+        cliente = new ClientePrueba("Pepe", "jojojojo22","elpeposo@app.com");
+        cliente.setBioCoins(1200);
+        BionCoins = cliente.getBioCoins();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
