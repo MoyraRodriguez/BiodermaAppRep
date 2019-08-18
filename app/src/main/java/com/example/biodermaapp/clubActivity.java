@@ -62,6 +62,8 @@ public class clubActivity extends AppCompatActivity {
         //if's que cambiaran en orden de subida de nivel
 
         //de bronce a plata
+
+
         if(BionCoins >= 1000 && BionCoins < 2500){
             Icono.setImageDrawable(getDrawable(R.drawable.ic_plata_no_seleccionado));
             NombreNivel.setText("Plata");

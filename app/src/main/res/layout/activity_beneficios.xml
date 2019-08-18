@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeneficiosActivity"
+    android:background="#ffff"
+    android:id="@+id/tConteiner">
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="91dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_flecha_back" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Beneficios"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/linea13"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/blue_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/linea16"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@drawable/blue_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/Descuento1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Descuento1"
+        app:layout_constraintTop_toBottomOf="@+id/Descuento1" />
+
+    <Button
+        android:id="@+id/Descuento1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#ffffff"
+
+        app:layout_constraintEnd_toEndOf="@+id/linea13"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/linea13"
+        app:layout_constraintTop_toBottomOf="@+id/linea13"
+
+
+
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/linea16"
+        app:layout_constraintEnd_toEndOf="@+id/Descuento1"
+        app:layout_constraintStart_toStartOf="@+id/Descuento1"
+        app:layout_constraintTop_toTopOf="@+id/Descuento1" />
+
+    <TextView
+        android:id="@+id/Informacion"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/linea16"
+        app:layout_constraintStart_toStartOf="@+id/linea16"
+        app:layout_constraintTop_toBottomOf="@+id/linea16"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:background="#EBF1F5"
+        android:textColor="#000000"
+        android:visibility="gone"/>
+
+
+</android.support.constraint.ConstraintLayout>
