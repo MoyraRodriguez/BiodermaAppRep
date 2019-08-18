@@ -13,12 +13,18 @@ public class BeneficiosActivity extends AppCompatActivity {
 
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
-    TextView Informacion;
+    TextView Informacion, Informacion2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_beneficios);
+        Descuento1 = findViewById(R.id.Descuento1);
+        Descuento2 = findViewById(R.id.descuento2);
+        Informacion = findViewById(R.id.Informacion);
+        tConteiner = findViewById(R.id.tConteiner);
+        Informacion2 = findViewById(R.id.Informacion2);
 
 
         MostrarInformacion();
@@ -34,9 +40,8 @@ public class BeneficiosActivity extends AppCompatActivity {
     private void MostrarInformacion() {
 
 
-        Descuento1 = findViewById(R.id.Descuento1);
-        Informacion = findViewById(R.id.Informacion);
-        tConteiner = findViewById(R.id.tConteiner);
+
+
 
         //transicion que muestra la informacion oculta
         Descuento1.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +59,21 @@ public class BeneficiosActivity extends AppCompatActivity {
             }
 
         });
+
+        Descuento2.setOnClickListener(new View.OnClickListener() {
+
+            boolean visible;
+            @Override
+            public void onClick(View v) {
+                TransitionManager.beginDelayedTransition(tConteiner);
+                visible = !visible;
+                Informacion2.setVisibility(visible ? View.VISIBLE : View.GONE);
+            }
+        });
+
+
+
+
 
     }
 
