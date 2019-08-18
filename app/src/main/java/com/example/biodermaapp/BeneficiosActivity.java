@@ -12,37 +12,49 @@ import android.widget.TextView;
 public class BeneficiosActivity extends AppCompatActivity {
 
     ViewGroup tConteiner;
-Button Descuento1, Descuento2;
-TextView Informacion;
+    Button Descuento1, Descuento2;
+    TextView Informacion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beneficios);
 
 
-
-        Descuento1 = findViewById(R.id.Descuento1);
-        Informacion = findViewById(R.id.Informacion);
-        tConteiner = findViewById(R.id.tConteiner);
-
-        Descuento1.setOnClickListener(new View.OnClickListener() {
-
-            boolean visible;
-            @Override
-            public void onClick(View v) {
-
-                TransitionManager.beginDelayedTransition(tConteiner);
-                visible = !visible;
-                Informacion.setVisibility(visible ? View.VISIBLE: View.GONE);
+        MostrarInformacion();
 
 
-
-            }
-        });
 
 
 
 
 
     }
+
+    private void MostrarInformacion() {
+
+
+        Descuento1 = findViewById(R.id.Descuento1);
+        Informacion = findViewById(R.id.Informacion);
+        tConteiner = findViewById(R.id.tConteiner);
+
+        //transicion que muestra la informacion oculta
+        Descuento1.setOnClickListener(new View.OnClickListener() {
+
+            boolean visible;
+
+            @Override
+            public void onClick(View v) {
+
+                TransitionManager.beginDelayedTransition(tConteiner);
+                visible = !visible;
+                Informacion.setVisibility(visible ? View.VISIBLE : View.GONE);
+
+
+            }
+
+        });
+
+    }
+
 }
