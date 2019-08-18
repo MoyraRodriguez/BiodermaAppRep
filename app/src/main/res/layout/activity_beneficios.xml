@@ -58,12 +58,19 @@
 
     <Button
         android:id="@+id/Descuento1"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#ffffff"
         android:text="Button"
         android:textAllCaps="false"
-        android:paddingRight="200dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+
+
+
+
+
 
         app:layout_constraintEnd_toEndOf="@+id/linea13"
         app:layout_constraintHorizontal_bias="0.511"
@@ -81,12 +88,17 @@
         android:id="@+id/descuento2"
         android:layout_width="0dp"
         android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+
 
 
         android:background="#ffffff"
-        android:paddingRight="200dp"
+
         android:text="Button"
-        android:textAllCaps="false"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,12 +138,13 @@
 
         />
 
-
-
-
-
-
-
+    <ImageButton
+        android:id="@+id/btnBronce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_bronceclub"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="118dp" />
 
 
 </android.support.constraint.ConstraintLayout>

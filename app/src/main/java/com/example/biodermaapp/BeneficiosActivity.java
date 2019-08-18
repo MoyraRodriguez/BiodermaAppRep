@@ -6,6 +6,7 @@ import android.transition.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -14,6 +15,7 @@ public class BeneficiosActivity extends AppCompatActivity {
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
     TextView Informacion, Informacion2;
+    ImageButton btnBronce;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +28,13 @@ public class BeneficiosActivity extends AppCompatActivity {
         tConteiner = findViewById(R.id.tConteiner);
         Informacion2 = findViewById(R.id.Informacion2);
 
+        //botones
+        btnBronce = findViewById(R.id.btnBronce);
+
+
 
         MostrarInformacion();
+        CambiodeDescuento();
 
 
 
@@ -35,6 +42,17 @@ public class BeneficiosActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void CambiodeDescuento(){
+
+        btnBronce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Descuento1.setText("5% de descuento en compras mayores a 200 soles");
+                Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+            }
+        });
     }
 
     private void MostrarInformacion() {
