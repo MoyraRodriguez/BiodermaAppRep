@@ -45,6 +45,7 @@ public class clubActivity extends AppCompatActivity {
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void SubidaDeNivel(){
 
         NombreNivel = findViewById(R.id.NombreNivel);

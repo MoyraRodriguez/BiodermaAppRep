@@ -115,13 +115,14 @@
                 tools:layout_editor_absoluteY="507dp" />
 
             <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+
                 android:orientation="horizontal"
-                android:id="@+id/Recycle"
-
-
-                >
+                app:layout_constraintTop_toTopOf="parent">
 
 
             </android.support.v7.widget.RecyclerView>

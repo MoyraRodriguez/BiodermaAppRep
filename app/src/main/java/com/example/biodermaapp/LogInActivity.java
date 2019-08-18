@@ -31,7 +31,7 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(LogInActivity.this,RecuperarCuentaActivity.class));
+                startActivity(new Intent(LogInActivity.this,clubActivity.class));
 
             }
         });
@@ -43,7 +43,7 @@ public class LogInActivity extends AppCompatActivity {
         BtnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LogInActivity.this,clubActivity.class));
+                startActivity(new Intent(LogInActivity.this,EditarPerfil.class));
             }
         });
     }
