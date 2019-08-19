@@ -31,6 +31,9 @@ public class BeneficiosActivity extends AppCompatActivity {
         tConteiner = findViewById(R.id.tConteiner);
         Informacion2 = findViewById(R.id.Informacion2);
 
+        //que se vea igual en todas las pantallas
+
+
         //botones
         btnBronce = findViewById(R.id.btnBronce);
         btnPlata = findViewById(R.id.btnPlata);
