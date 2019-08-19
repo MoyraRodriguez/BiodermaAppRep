@@ -1,6 +1,6 @@
 package com.example.biodermaapp.entidades;
 
-public class Producto {
+public class ProductoComprable {
 
     private String nombreProducto;
     private String urlImagen;
@@ -11,10 +11,13 @@ public class Producto {
     private String formato;
     private GamaProducto gama;
     private double costoProducto;
+    private double descuentoProducto;
+    private double fechaLimiteDescuento;
+    private String consejos;
 
 
-    public Producto(String nombreProducto, String urlImagen, int imagen, String indicaciones,
-                    String beneficios, String informacion, String formato, GamaProducto gama, double costoProducto) {
+    public ProductoComprable(String nombreProducto, String urlImagen, int imagen, String indicaciones, String beneficios, String informacion,
+                             String formato, GamaProducto gama, double costoProducto, double descuentoProducto, double fechaLimiteDescuento) {
         this.nombreProducto = nombreProducto;
         this.urlImagen = urlImagen;
         this.imagen = imagen;
@@ -24,6 +27,15 @@ public class Producto {
         this.formato = formato;
         this.gama = gama;
         this.costoProducto = costoProducto;
+        this.descuentoProducto = descuentoProducto;
+        this.fechaLimiteDescuento = fechaLimiteDescuento;
+    }
+
+    public ProductoComprable(String nombreProducto, /*int imagen,*/ double descuentoProducto, double fechaLimiteDescuento) {
+        this.nombreProducto = nombreProducto;
+        //this.imagen = imagen;
+        this.descuentoProducto = descuentoProducto;
+        this.fechaLimiteDescuento = fechaLimiteDescuento;
     }
 
     public String getNombreProducto() {
@@ -96,5 +108,29 @@ public class Producto {
 
     public void setCostoProducto(double costoProducto) {
         this.costoProducto = costoProducto;
+    }
+
+    public double getDescuentoProducto() {
+        return descuentoProducto;
+    }
+
+    public void setDescuentoProducto(double descuentoProducto) {
+        this.descuentoProducto = descuentoProducto;
+    }
+
+    public double getFechaLimiteDescuento() {
+        return fechaLimiteDescuento;
+    }
+
+    public void setFechaLimiteDescuento(double fechaLimiteDescuento) {
+        this.fechaLimiteDescuento = fechaLimiteDescuento;
+    }
+
+    public String getConsejos() {
+        return consejos;
+    }
+
+    public void setConsejos(String consejos) {
+        this.consejos = consejos;
     }
 }

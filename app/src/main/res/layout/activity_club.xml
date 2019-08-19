@@ -108,24 +108,12 @@
                 android:id="@+id/linea11"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
+                android:layout_marginTop="280dp"
                 android:background="@drawable/blue_rectangle"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="507dp" />
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/Recycle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-
-
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="parent">
-
-
-            </android.support.v7.widget.RecyclerView>
+                app:layout_constraintTop_toBottomOf="@+id/recycleViewClub" />
 
 
             <TextView
@@ -176,12 +164,15 @@
                 android:layout_width="0dp"
                 android:layout_height="2dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="254dp"
                 android:background="@drawable/blue_rectangle"
+                app:layout_constraintBottom_toTopOf="@+id/linea11"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="856dp" />
+                app:layout_constraintTop_toBottomOf="@+id/recycleViewClub" />
 
             <ImageView
                 android:id="@+id/imageView15"
@@ -241,6 +232,23 @@
                 app:layout_constraintStart_toStartOf="@+id/linea9"
                 app:layout_constraintTop_toBottomOf="@+id/linea9"
                 app:srcCompat="@drawable/ic_bcrecurso_1capas" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/recycleViewClub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linea10">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvClub"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
