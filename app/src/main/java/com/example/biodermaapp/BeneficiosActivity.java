@@ -18,7 +18,7 @@ public class BeneficiosActivity extends AppCompatActivity {
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
     TextView Informacion, Informacion2;
-    ImageButton btnBronce,btnPlata;
+    ImageButton btnBronce,btnPlata,btnOro,btnPlatino,btnDiamante;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,10 @@ public class BeneficiosActivity extends AppCompatActivity {
         //botones
         btnBronce = findViewById(R.id.btnBronce);
         btnPlata = findViewById(R.id.btnPlata);
+        btnOro = findViewById(R.id.btnOro);
+        btnPlatino = findViewById(R.id.btnPlatino);
+        btnDiamante = findViewById(R.id.btnDiamante);
+
 
 
 
@@ -57,13 +61,19 @@ public class BeneficiosActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-                Descuento1.setText("5% de descuento en compras mayores a 200 soles");
+
+
                 btnBronce.setBackgroundColor(Color.parseColor("#334D6B"));
                 btnPlata.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
 
-
-
+                Descuento1.setText("5% de descuento en compras mayores a 200 soles");
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+
+                Descuento2.setText("10% de descuento en hydrabios");
+                Informacion2.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tortor velit, interdum elementum sem dapibus ac. Aliquam nec enim non tortor venenatis mattis. Pellentesque quis nibh elementum, imperdiet leo et, lobortis felis. Suspendisse ac malesuada est. Suspendisse dapibus ipsum id efficitur mollis. Suspendisse ultrices nec est quis laoreet. Donec lacinia diam nulla, sed laoreet leo ultricies ut. Duis non cursus urna. Donec porta posuere sem, eget placerat lectus pretium eget");
             }
         });
 
@@ -74,6 +84,15 @@ public class BeneficiosActivity extends AppCompatActivity {
 
                 btnBronce.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnPlata.setBackgroundColor(Color.parseColor("#334D6B"));
+                btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
+
+                Descuento2.setText("10% de descuento en sensibyos");
+
+                Informacion2.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tortor velit, interdum elementum sem dapibus ac. Aliquam nec enim non tortor venenatis mattis. Pellentesque quis nibh elementum, imperdiet leo et, lobortis felis. Suspendisse ac malesuada est. Suspendisse dapibus ipsum id efficitur mollis. Suspendisse ultrices nec est quis laoreet. Donec lacinia diam nulla, sed laoreet leo ultricies ut. Duis non cursus urna. Donec porta posuere sem, eget placerat lectus pretium eget");
+
+
 
 
 
@@ -81,6 +100,67 @@ public class BeneficiosActivity extends AppCompatActivity {
 
 
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+
+
+            }
+        });
+
+        btnOro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btnBronce.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlata.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnOro.setBackgroundColor(Color.parseColor("#334D6B"));
+                btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
+
+                Descuento1.setText("5% de descuento en compras mayores a 200 soles");
+                Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+
+                Descuento2.setText("10% de descuento en hydrabios");
+                Informacion2.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tortor velit, interdum elementum sem dapibus ac. Aliquam nec enim non tortor venenatis mattis. Pel");
+
+            }
+        });
+
+        btnPlatino.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btnBronce.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlata.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlatino.setBackgroundColor(Color.parseColor("#334D6B"));
+                btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
+
+                Descuento1.setText("5% de descuento en compras mayores a 200 soles");
+                Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+
+                Descuento2.setText("10% de descuento en hydrabios");
+                Informacion2.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tortor velit, interdum elementum sem dapibus ac. Aliquam nec enim non tortor venenatis mattis. Pel");
+
+
+            }
+        });
+
+        btnDiamante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                btnBronce.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlata.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnDiamante.setBackgroundColor(Color.parseColor("#334D6B"));
+
+                Descuento1.setText("5% de descuento en compras mayores a 200 soles");
+                Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+
+                Descuento2.setText("10% de descuento en hydrabios");
+                Informacion2.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tortor velit, interdum elementum sem dapibus ac. Aliquam nec enim non tortor venenatis mattis. Pel");
+
 
 
             }
