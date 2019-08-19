@@ -1,5 +1,8 @@
 package com.example.biodermaapp;
 
+import android.graphics.Color;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.TransitionManager;
@@ -15,7 +18,7 @@ public class BeneficiosActivity extends AppCompatActivity {
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
     TextView Informacion, Informacion2;
-    ImageButton btnBronce;
+    ImageButton btnBronce,btnPlata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class BeneficiosActivity extends AppCompatActivity {
 
         //botones
         btnBronce = findViewById(R.id.btnBronce);
+        btnPlata = findViewById(R.id.btnPlata);
 
 
 
@@ -47,10 +51,35 @@ public class BeneficiosActivity extends AppCompatActivity {
     private void CambiodeDescuento(){
 
         btnBronce.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
                 Descuento1.setText("5% de descuento en compras mayores a 200 soles");
+                btnBronce.setBackgroundColor(Color.parseColor("#334D6B"));
+                btnPlata.setBackgroundColor(Color.parseColor("#ffffff"));
+
+
+
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+            }
+        });
+
+        btnPlata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Descuento1.setText("20% de descuento en compras mayores a 100 soles");
+
+                btnBronce.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnPlata.setBackgroundColor(Color.parseColor("#334D6B"));
+
+
+
+
+
+
+                Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
+
+
             }
         });
     }

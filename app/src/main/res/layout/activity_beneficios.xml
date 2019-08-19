@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_flecha_back" />
+        app:srcCompat="@drawable/ic_flecha_back"
+        />
 
     <TextView
         android:id="@+id/textView13"
@@ -142,9 +143,68 @@
         android:id="@+id/btnBronce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_bronceclub"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="#ffff"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linea13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/ic_bronce_no_seleccionado" />
+
+    <ImageButton
+        android:id="@+id/btnPlata"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:background="#ffff"
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btnBronce"
+        app:layout_constraintStart_toEndOf="@+id/btnBronce"
+        app:layout_constraintTop_toTopOf="@+id/btnBronce"
+        app:srcCompat="@drawable/ic_plata_no_seleccionado" />
+
+    <ImageButton
+        android:id="@+id/btnOro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#ffff"
+
+
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlata"
+        app:layout_constraintStart_toEndOf="@+id/btnPlata"
+        app:layout_constraintTop_toTopOf="@+id/btnPlata"
+        app:srcCompat="@drawable/ic_oro_no_seleccionado" />
+
+    <ImageButton
+        android:id="@+id/btnPlatino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="#ffff"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOro"
+        app:layout_constraintStart_toEndOf="@+id/btnOro"
+        app:layout_constraintTop_toTopOf="@+id/btnOro"
+        app:srcCompat="@drawable/ic_platino_no_seleccionado" />
+
+    <ImageButton
+        android:id="@+id/btnDiamante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="#ffff"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlatino"
+        app:layout_constraintStart_toEndOf="@+id/btnPlatino"
+        app:layout_constraintTop_toTopOf="@+id/btnPlatino"
+        app:srcCompat="@drawable/ic_diamante_no_seleccionado" />
 
 
 </android.support.constraint.ConstraintLayout>
