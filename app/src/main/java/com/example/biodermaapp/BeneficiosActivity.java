@@ -17,7 +17,7 @@ public class BeneficiosActivity extends AppCompatActivity {
 
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
-    TextView Informacion, Informacion2;
+    TextView Informacion, Informacion2,Broncetxt,Platatxt,Orotxt,Platinotxt,Diamantetxt;
     ImageButton btnBronce,btnPlata,btnOro,btnPlatino,btnDiamante;
 
     @Override
@@ -40,6 +40,13 @@ public class BeneficiosActivity extends AppCompatActivity {
         btnOro = findViewById(R.id.btnOro);
         btnPlatino = findViewById(R.id.btnPlatino);
         btnDiamante = findViewById(R.id.btnDiamante);
+
+        //textos
+        Broncetxt = findViewById(R.id.Broncetxt);
+        Platatxt = findViewById(R.id.Platatxt);
+        Orotxt = findViewById(R.id.Orotxt);
+        Platinotxt = findViewById(R.id.Platinotxt);
+        Diamantetxt = findViewById(R.id.Diamantetxt);
 
 
 
@@ -64,10 +71,18 @@ public class BeneficiosActivity extends AppCompatActivity {
 
 
                 btnBronce.setBackgroundColor(Color.parseColor("#334D6B"));
+
                 btnPlata.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
+
+                //textos
+                Broncetxt.setTextColor(Color.parseColor(("#ffffff")));
+                Platatxt.setTextColor(Color.parseColor(("#334D6B")));
+                Orotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platinotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Diamantetxt.setTextColor(Color.parseColor(("#334D6B")));
 
                 Descuento1.setText("5% de descuento en compras mayores a 200 soles");
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
@@ -87,6 +102,12 @@ public class BeneficiosActivity extends AppCompatActivity {
                 btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
+
+                Broncetxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platatxt.setTextColor(Color.parseColor(("#334D6B")));
+                Orotxt.setTextColor(Color.parseColor(("#ffffff")));
+                Platinotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Diamantetxt.setTextColor(Color.parseColor(("#334D6B")));
 
                 Descuento2.setText("10% de descuento en sensibyos");
 
@@ -115,6 +136,13 @@ public class BeneficiosActivity extends AppCompatActivity {
                 btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
 
+
+                Broncetxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platatxt.setTextColor(Color.parseColor(("#ffffff")));
+                Orotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platinotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Diamantetxt.setTextColor(Color.parseColor(("#334D6B")));
+
                 Descuento1.setText("5% de descuento en compras mayores a 200 soles");
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
 
@@ -133,6 +161,13 @@ public class BeneficiosActivity extends AppCompatActivity {
                 btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnPlatino.setBackgroundColor(Color.parseColor("#334D6B"));
                 btnDiamante.setBackgroundColor(Color.parseColor("#ffffff"));
+
+
+                Broncetxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platatxt.setTextColor(Color.parseColor(("#334D6B")));
+                Orotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platinotxt.setTextColor(Color.parseColor(("#ffffff")));
+                Diamantetxt.setTextColor(Color.parseColor(("#334D6B")));
 
                 Descuento1.setText("5% de descuento en compras mayores a 200 soles");
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
@@ -154,6 +189,12 @@ public class BeneficiosActivity extends AppCompatActivity {
                 btnOro.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnPlatino.setBackgroundColor(Color.parseColor("#ffffff"));
                 btnDiamante.setBackgroundColor(Color.parseColor("#334D6B"));
+
+                Broncetxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platatxt.setTextColor(Color.parseColor(("#334D6B")));
+                Orotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Platinotxt.setTextColor(Color.parseColor(("#334D6B")));
+                Diamantetxt.setTextColor(Color.parseColor(("#ffffff")));
 
                 Descuento1.setText("5% de descuento en compras mayores a 200 soles");
                 Informacion.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris metus, a egestas velit hendrerit eu. Suspendisse quis lobortis velit. Nam consectetur odio et lobortis elementum.");
