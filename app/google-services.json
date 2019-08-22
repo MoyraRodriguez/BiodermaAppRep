@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1026454039867",
+    "firebase_url": "https://bioderma-app-fb.firebaseio.com",
+    "project_id": "bioderma-app-fb",
+    "storage_bucket": "bioderma-app-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026454039867:android:ae9ee5e96723c048",
+        "android_client_info": {
+          "package_name": "com.example.biodermaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026454039867-qmvardi730pijkgagmu7umigocao7dog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.biodermaapp",
+            "certificate_hash": "85bc51496adbdf539171e9255d77147ab2160fdb"
+          }
+        },
+        {
+          "client_id": "1026454039867-fsi13alnqc35e64r7r4g8onvr4coicib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyT9pCwGBS8hGd63iAUgiDl1Nc0m_fI1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026454039867-fsi13alnqc35e64r7r4g8onvr4coicib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
