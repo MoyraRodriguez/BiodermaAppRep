@@ -2,25 +2,49 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tConteiner"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BeneficiosActivity"
     android:background="#ffff"
-    android:id="@+id/tConteiner">
+    tools:context=".BeneficiosActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/linea16"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="32dp"
+        android:background="#334D6B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea17" />
+
+    <TextView
+        android:id="@+id/linea17"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:background="#334D6B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="91dp"
         android:layout_height="83dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/colorAccent"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_flecha_back"
-        />
+        app:srcCompat="@drawable/ic_flecha_back" />
 
     <TextView
         android:id="@+id/textView13"
@@ -36,91 +60,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/linea13"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="170dp"
-        android:background="@drawable/blue_rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-
-    <TextView
-        android:id="@+id/linea12"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:background="@drawable/blue_rectangle"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/linea17"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:background="@drawable/blue_rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <TextView
-        android:id="@+id/linea16"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:background="@drawable/blue_rectangle"
-        app:layout_constraintEnd_toEndOf="@+id/Descuento1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Descuento1"
-        app:layout_constraintTop_toBottomOf="@+id/Descuento1" />
 
     <Button
         android:id="@+id/Descuento1"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#ffffff"
-        android:text="Button"
-        android:textAllCaps="false"
-        android:textAlignment="textStart"
+
+
+        android:background="@drawable/custom_button_borders"
+
+
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
-
-
-
-
-
-
-        app:layout_constraintEnd_toEndOf="@+id/linea13"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/linea13"
-        app:layout_constraintTop_toBottomOf="@+id/linea13"
-
-
-
-
-
-
-        />
+        android:text="Button"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/descuento2"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:textAllCaps="false"
-        android:textAlignment="textStart"
+        android:background="@drawable/custom_button_borders"
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
 
 
-
-        android:background="#ffffff"
-
         android:text="Button"
 
+        android:textAlignment="textStart"
+
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,17 +103,17 @@
         android:id="@+id/Informacion"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/linea16"
-        app:layout_constraintStart_toStartOf="@+id/linea16"
-        app:layout_constraintTop_toBottomOf="@+id/linea16"
-        android:paddingLeft="30dp"
-        android:paddingTop="10dp"
         android:background="#EBF1F5"
+        android:paddingLeft="30dp"
+
+
+        android:paddingTop="10dp"
+        android:text="TextView"
         android:textColor="#000000"
         android:visibility="gone"
-
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Descuento1"
+        app:layout_constraintTop_toBottomOf="@+id/Descuento1" />
 
     <TextView
         android:id="@+id/Informacion2"
@@ -151,11 +124,11 @@
         android:paddingTop="10dp"
         android:text="TextView"
         android:textColor="#000000"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/descuento2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/descuento2"
         app:layout_constraintTop_toBottomOf="@+id/descuento2"
-        android:visibility="gone"
 
 
         />
@@ -164,24 +137,25 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+
+
         android:gravity="center"
-
-
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linea13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13">
+        app:layout_constraintTop_toBottomOf="@+id/linea16">
 
 
         <ImageButton
             android:id="@+id/btnBronce"
             android:layout_width="76dp"
             android:layout_height="match_parent"
-
-
             android:background="#ffff"
+
+
+            android:cropToPadding="false"
+            android:paddingBottom="20dp"
+
 
             app:layout_constraintBottom_toTopOf="@+id/linea13"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
@@ -190,28 +164,31 @@
             tools:layout_editor_absoluteX="0dp" />
 
         <ImageButton
-            android:id="@+id/btnPlata"
-            android:layout_width="76dp"
-            android:layout_height="74dp"
-
-            android:background="#ffff"
-            android:padding="5dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btnBronce"
-            app:layout_constraintStart_toEndOf="@+id/btnBronce"
-            app:layout_constraintTop_toTopOf="@+id/btnBronce"
-            app:srcCompat="@drawable/ic_plata_no_seleccionado" />
-
-        <ImageButton
             android:id="@+id/btnOro"
             android:layout_width="76dp"
             android:layout_height="74dp"
 
 
             android:background="#ffff"
-            android:padding="5dp"
+            android:paddingBottom="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/btnPlata"
             app:layout_constraintStart_toEndOf="@+id/btnPlata"
             app:layout_constraintTop_toTopOf="@+id/btnPlata"
+            app:srcCompat="@drawable/ic_plata_no_seleccionado" />
+
+
+        <ImageButton
+            android:id="@+id/btnPlata"
+            android:layout_width="76dp"
+            android:layout_height="74dp"
+
+
+            android:background="#ffff"
+            android:paddingBottom="20dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/btnBronce"
+            app:layout_constraintStart_toEndOf="@+id/btnBronce"
+            app:layout_constraintTop_toTopOf="@+id/btnBronce"
             app:srcCompat="@drawable/ic_oro_no_seleccionado" />
 
         <ImageButton
@@ -221,7 +198,7 @@
 
 
             android:background="#ffff"
-            android:padding="5dp"
+            android:paddingBottom="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/btnOro"
             app:layout_constraintStart_toEndOf="@+id/btnOro"
             app:layout_constraintTop_toTopOf="@+id/btnOro"
@@ -232,14 +209,156 @@
             android:id="@+id/btnDiamante"
             android:layout_width="76dp"
             android:layout_height="74dp"
-
-
             android:background="#ffff"
-            android:padding="5dp"
+
+
+            android:cropToPadding="false"
+            android:paddingBottom="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/btnPlatino"
             app:layout_constraintStart_toEndOf="@+id/btnPlatino"
             app:layout_constraintTop_toTopOf="@+id/btnPlatino"
             app:srcCompat="@drawable/ic_diamante_no_seleccionado" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/Orotxt"
+        android:layout_width="29dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="8dp"
+        android:text="Oro"
+        android:textAlignment="center"
+        android:textColor="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/lineaH"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lineaH4"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:background="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/lineaH"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lineaH5"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:background="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/lineaH4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lineaH2"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="74dp"
+        android:background="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/lineaH"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Platatxt"
+        android:layout_width="38dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="43dp"
+        android:text="Plata"
+
+        android:textAlignment="center"
+        android:textColor="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
+        app:layout_constraintEnd_toStartOf="@+id/Orotxt"
+        app:layout_constraintTop_toTopOf="@+id/Orotxt" />
+
+    <TextView
+        android:id="@+id/Platinotxt"
+        android:layout_width="49dp"
+        android:layout_height="16dp"
+
+
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="Platino"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
+        app:layout_constraintStart_toEndOf="@+id/Orotxt"
+        app:layout_constraintTop_toTopOf="@+id/Orotxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Diamantetxt"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+
+        android:layout_marginStart="15dp"
+        android:text="Diamante"
+        android:textAlignment="center"
+        android:textColor="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/Platinotxt"
+        app:layout_constraintStart_toEndOf="@+id/Platinotxt"
+        app:layout_constraintTop_toTopOf="@+id/Platinotxt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Broncetxt"
+        android:layout_width="49dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="32dp"
+
+        android:text="Bronce"
+        android:textAlignment="center"
+        android:textColor="#334D6B"
+        app:layout_constraintBottom_toBottomOf="@+id/Platatxt"
+        app:layout_constraintEnd_toStartOf="@+id/Platatxt"
+        app:layout_constraintTop_toTopOf="@+id/Platatxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Descuento1"
+        app:layout_constraintStart_toStartOf="@+id/Descuento1"
+        app:layout_constraintTop_toTopOf="@+id/Descuento1"
+        app:srcCompat="@drawable/ic_point" />
+
+    <ImageView
+        android:id="@+id/point2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descuento2"
+        app:layout_constraintStart_toStartOf="@+id/descuento2"
+        app:layout_constraintTop_toTopOf="@+id/descuento2"
+        app:srcCompat="@drawable/ic_point" />
 
 </android.support.constraint.ConstraintLayout>
