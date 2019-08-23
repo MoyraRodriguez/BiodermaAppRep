@@ -1,19 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="4dp"
+        android:background="#334D6B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/botton_navigation">
 
 
     </android.support.design.widget.BottomNavigationView>
 
-</RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RadioGroup
+                android:id="@+id/generoRadioGroup"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/firstimage"
+                app:layout_constraintStart_toStartOf="@+id/firstimage"
+                app:layout_constraintTop_toBottomOf="@+id/firstimage">
+
+                <RadioButton
+                    android:id="@+id/btn1"
+                    android:layout_height="match_parent"
+
+                    android:button="@drawable/ic_rb_not_cheked"
+
+
+                    android:checked="true"
+                    android:paddingRight="80dp"
+                    android:layout_width="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/ic_rb_not_cheked"
+                    android:paddingRight="80dp" />
+
+                <RadioButton
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:button="@drawable/ic_rb_not_cheked" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="19dp"
+                android:layout_height="86dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_rectangulo_azul" />
+
+
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="153dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintStart_toEndOf="@+id/imageView18"
+                app:layout_constraintTop_toTopOf="@+id/imageView18"
+                app:srcCompat="@drawable/ic_biodema_logo_3" />
+
+            <ImageView
+                android:id="@+id/firstimage"
+                android:layout_width="290dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

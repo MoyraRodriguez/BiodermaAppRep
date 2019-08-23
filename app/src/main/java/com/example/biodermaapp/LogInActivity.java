@@ -43,7 +43,7 @@ public class LogInActivity extends AppCompatActivity {
         BtnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LogInActivity.this,BeneficiosActivity.class));
+                startActivity(new Intent(LogInActivity.this,HomeActivity.class));
             }
         });
     }
