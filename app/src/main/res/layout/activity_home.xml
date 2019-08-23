@@ -43,11 +43,12 @@
             <RadioGroup
                 android:id="@+id/generoRadioGroup"
 
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="156dp"
+                android:layout_height="37dp"
                 android:layout_marginStart="26dp"
 
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="26dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="@+id/firstimage"
                 app:layout_constraintStart_toStartOf="@+id/firstimage"
@@ -55,21 +56,21 @@
 
                 <RadioButton
                     android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+
                     android:layout_height="match_parent"
 
+
                     android:button="@drawable/ic_rb_not_cheked"
-
-
                     android:checked="true"
-                    android:paddingRight="80dp"
-                    android:layout_width="wrap_content" />
+                    android:paddingRight="40dp" />
 
                 <RadioButton
                     android:id="@+id/btn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/ic_rb_not_cheked"
-                    android:paddingRight="80dp" />
+                    android:paddingRight="40dp" />
 
                 <RadioButton
                     android:id="@+id/btn3"
@@ -86,7 +87,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_rectangulo_azul" />
-
 
 
             <ImageView
@@ -110,6 +110,49 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20"
                 app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+            <ImageView
+                android:id="@+id/secondimage"
+                android:layout_width="0dp"
+                android:layout_height="226dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/firstimage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/firstimage"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:srcCompat="@drawable/common_google_signin_btn_text_dark_normal" />
+
+            <ImageButton
+                android:id="@+id/BackImage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/secondimage"
+                app:layout_constraintEnd_toStartOf="@+id/secondimage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/secondimage"
+                app:srcCompat="@drawable/ic_flecha_back" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="77dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="62dp"
+                android:gravity="center"
+                android:text="Productos"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/firstimage"
+                app:layout_constraintStart_toStartOf="@+id/firstimage"
+                app:layout_constraintTop_toBottomOf="@+id/generoRadioGroup" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                tools:layout_editor_absoluteX="303dp"
+                tools:layout_editor_absoluteY="796dp" />
 
 
         </android.support.constraint.ConstraintLayout>

@@ -10,6 +10,8 @@ public class HomeActivity extends AppCompatActivity {
     RadioButton btn1,btn2,btn3;
     ImageView imagen1;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +21,15 @@ public class HomeActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
         imagen1 = findViewById(R.id.firstimage);
+
+
         CambioDeImagen1();
 
 
 
 
     }
+
 
     public void CambioDeImagen1(){
 
@@ -42,6 +47,8 @@ public class HomeActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
 
                 imagen1.setImageResource(R.drawable.ic_cuadrado);
 
