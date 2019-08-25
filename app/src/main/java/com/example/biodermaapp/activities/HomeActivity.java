@@ -34,9 +34,9 @@ public class HomeActivity extends AppCompatActivity {
         CambioDeImagen1();
 
         productos = new ArrayList<>();
-        productos.add(new ProductoComprable("Pasta dental",R.drawable.ic_correo,"Ejasdanoasndaodnosdnao"));
-        productos.add(new ProductoComprable("Waifu barata",R.drawable.ic_biodema_logo_3,"Ejasdanoasndaodnosdnao"));
-        productos.add(new ProductoComprable("Perro",R.drawable.ic_fecha,"Ejasdanoasndaodnosdnao"));
+        productos.add(new ProductoComprable("Pasta dental",R.drawable.sensibio_cream,"Ejasdanoasndaodnosdnao"));
+        productos.add(new ProductoComprable("Waifu barata",R.drawable.sensibio_eye,"Ejasdanoasndaodnosdnao"));
+        productos.add(new ProductoComprable("Perro",R.drawable.sensibio_mousant,"Ejasdanoasndaodnosdnao"));
 
         adapter = new AdapterCardView(productos,this);
         viewPager = findViewById(R.id.viewPager);
