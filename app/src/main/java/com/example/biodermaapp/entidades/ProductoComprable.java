@@ -31,6 +31,12 @@ public class ProductoComprable {
         this.fechaLimiteDescuento = fechaLimiteDescuento;
     }
 
+    public ProductoComprable(String nombreProducto, int imagen, String informacion) {
+        this.nombreProducto = nombreProducto;
+        this.imagen = imagen;
+        this.informacion = informacion;
+    }
+
     public ProductoComprable(String nombreProducto, /*int imagen,*/ double descuentoProducto, double fechaLimiteDescuento) {
         this.nombreProducto = nombreProducto;
         //this.imagen = imagen;

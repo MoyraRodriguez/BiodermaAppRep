@@ -1,4 +1,4 @@
-package com.example.biodermaapp;
+package com.example.biodermaapp.activities;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.biodermaapp.R;
 import com.example.biodermaapp.ajustador.RecycleViewProductoDescuento;
 import com.example.biodermaapp.entidades.ClientePrueba;
 import com.example.biodermaapp.entidades.ProductoComprable;

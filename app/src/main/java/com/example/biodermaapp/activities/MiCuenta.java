@@ -1,7 +1,9 @@
-package com.example.biodermaapp;
+package com.example.biodermaapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.biodermaapp.R;
 
 public class MiCuenta extends AppCompatActivity {
 

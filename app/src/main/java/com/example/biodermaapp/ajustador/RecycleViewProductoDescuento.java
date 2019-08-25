@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.biodermaapp.Producto;
+import com.example.biodermaapp.activities.Producto;
 import com.example.biodermaapp.R;
 import com.example.biodermaapp.entidades.ProductoComprable;
 

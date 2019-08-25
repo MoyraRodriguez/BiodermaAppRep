@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffff"
-    tools:context=".BeneficiosActivity"
+    tools:context=".activities.BeneficiosActivity"
     tools:layout_editor_absoluteY="25dp"
     android:orientation="vertical">
 
