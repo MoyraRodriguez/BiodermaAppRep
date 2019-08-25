@@ -8,7 +8,7 @@
     android:scrollbarStyle="insideInset"
     android:scrollbars="vertical"
     android:visibility="visible"
-    tools:context=".MiCuenta"
+    tools:context=".activities.MiCuenta"
     tools:visibility="visible">
 
     <android.support.design.widget.BottomNavigationView

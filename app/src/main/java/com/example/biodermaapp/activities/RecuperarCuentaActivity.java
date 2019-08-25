@@ -1,4 +1,4 @@
-package com.example.biodermaapp;
+package com.example.biodermaapp.activities;
 
 import android.app.Dialog;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.biodermaapp.R;
 
 public class RecuperarCuentaActivity extends AppCompatActivity {
 

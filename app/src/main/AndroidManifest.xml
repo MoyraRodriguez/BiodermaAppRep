@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BeneficiosActivity"></activity>
-        <activity android:name=".clubActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".Producto" />
-        <activity android:name=".EditarPerfil" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MiCuenta" />
-        <activity android:name=".RecuperarCuentaActivity" />
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.BeneficiosActivity"></activity>
+        <activity android:name=".activities.clubActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.Producto" />
+        <activity android:name=".activities.EditarPerfil" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.MiCuenta" />
+        <activity android:name=".activities.RecuperarCuentaActivity" />
+        <activity android:name=".activities.LogInActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

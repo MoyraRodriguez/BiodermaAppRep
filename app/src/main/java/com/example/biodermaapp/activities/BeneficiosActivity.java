@@ -1,4 +1,4 @@
-package com.example.biodermaapp;
+package com.example.biodermaapp.activities;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.example.biodermaapp.R;
 
 public class BeneficiosActivity extends AppCompatActivity {
 
