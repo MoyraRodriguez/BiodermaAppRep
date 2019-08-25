@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         userET = findViewById(R.id.textUsuario2);
         passwordET = findViewById(R.id.editTextContraseña);
         confirmpswET = findViewById(R.id.editTextContraseña2);
-        emailET = findViewById(R.id.editTextContraseña);
+        emailET = findViewById(R.id.editTextCorreo);
         ingresar = findViewById(R.id.buttonIngresar);
         cancelar = findViewById(R.id.buttonCancelar);
         loadingBar = new ProgressDialog(this);

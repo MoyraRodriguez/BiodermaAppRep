@@ -111,52 +111,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView20"
                 app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
 
-            <ImageView
-                android:id="@+id/secondimage"
-                android:layout_width="0dp"
-                android:layout_height="226dp"
-                app:layout_constraintEnd_toEndOf="@+id/firstimage"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/firstimage"
-                app:layout_constraintTop_toBottomOf="@+id/rbImage"
-                app:srcCompat="@drawable/common_google_signin_btn_text_dark_normal" />
-
-            <ImageButton
-                android:id="@+id/BackImage"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintBottom_toBottomOf="@+id/secondimage"
-                app:layout_constraintEnd_toStartOf="@+id/secondimage"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/secondimage"
-                app:srcCompat="@drawable/ic_flecha_back" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="77dp"
-                android:layout_height="26dp"
-                android:layout_marginTop="62dp"
-                android:gravity="center"
-                android:text="Productos"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="@+id/firstimage"
-                app:layout_constraintStart_toStartOf="@+id/firstimage"
-                app:layout_constraintTop_toBottomOf="@+id/rbImage" />
-
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="0dp"
-                android:layout_height="200dp"
+                android:layout_height="300dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="45dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/firstimage"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/secondimage" />
+                app:layout_constraintStart_toStartOf="@+id/firstimage"
+                app:layout_constraintTop_toBottomOf="@+id/rbImage" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
