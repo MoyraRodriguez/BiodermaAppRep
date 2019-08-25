@@ -120,13 +120,12 @@
                 android:id="@+id/SaldoBioCoins"
                 android:layout_width="140dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="8dp"
                 android:text="100 BC"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="35dp"
                 app:layout_constraintEnd_toEndOf="@+id/textView7"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
