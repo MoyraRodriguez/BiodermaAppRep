@@ -41,7 +41,7 @@
 
 
             <RadioGroup
-                android:id="@+id/generoRadioGroup"
+                android:id="@+id/rbImage"
 
                 android:layout_width="156dp"
                 android:layout_height="37dp"
@@ -115,11 +115,10 @@
                 android:id="@+id/secondimage"
                 android:layout_width="0dp"
                 android:layout_height="226dp"
-                android:layout_marginTop="24dp"
                 app:layout_constraintEnd_toEndOf="@+id/firstimage"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/firstimage"
-                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/rbImage"
                 app:srcCompat="@drawable/common_google_signin_btn_text_dark_normal" />
 
             <ImageButton
@@ -144,7 +143,7 @@
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/firstimage"
                 app:layout_constraintStart_toStartOf="@+id/firstimage"
-                app:layout_constraintTop_toBottomOf="@+id/generoRadioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/rbImageView" />
 
             <Button
                 android:id="@+id/button"

@@ -178,7 +178,7 @@
                 app:srcCompat="@drawable/ic_genero_otro" />
 
             <RadioGroup
-                android:id="@+id/generoRadioGroup"
+                android:id="@+id/rbGenero"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -221,7 +221,7 @@
                 android:paddingTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/generoRadioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/rbGenero" />
 
             <ImageView
                 android:id="@+id/imageView12"
