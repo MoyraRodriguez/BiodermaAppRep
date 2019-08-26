@@ -78,7 +78,7 @@
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="0dp"
-                android:layout_height="300dp"
+                android:layout_height="400dp"
                 android:layout_marginTop="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -102,13 +102,80 @@
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPagerActualidad"
                 android:layout_width="0dp"
-                android:layout_height="300dp"
+                android:layout_height="400dp"
                 android:layout_marginTop="32dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
+            <EditText
+                android:id="@+id/editTextEnviarCorreo"
+                android:layout_width="307dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_cuadro"
+                android:ems="10"
+                android:hint="Correo Electronico"
+                android:inputType="textPassword|textEmailAddress"
+                android:paddingLeft="50dp"
+                android:paddingTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextEnviarCorreo"
+                app:layout_constraintStart_toStartOf="@+id/editTextEnviarCorreo"
+                app:layout_constraintTop_toTopOf="@+id/editTextEnviarCorreo"
+                app:srcCompat="@drawable/ic_correo" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Suscribete"
+                android:textColor="@color/principalBlue"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPagerActualidad" />
+
+            <Button
+                android:id="@+id/btnTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEnviarCorreo" />
+
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnTwitter"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEnviarCorreo" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnFacebook"
+                app:layout_constraintStart_toStartOf="@+id/btnTwitter"
+                app:layout_constraintTop_toBottomOf="@+id/btnTwitter" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
