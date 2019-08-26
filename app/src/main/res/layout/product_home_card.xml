@@ -21,7 +21,7 @@
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_lugar" />
 
@@ -32,8 +32,8 @@
                 android:layout_below="@id/image"
                 android:layout_alignEnd="@+id/image"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="251dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="296dp"
                 android:text="Nombre Producto"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp" />

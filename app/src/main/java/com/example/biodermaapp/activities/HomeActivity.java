@@ -17,8 +17,8 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
     ViewPager viewPager;
-    AdapterCardView adapter;
-    List<ProductoComprable> productos;
+    AdapterCardView adapter, adapter2;
+    List<ProductoComprable> productos, actualidad;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +27,22 @@ public class HomeActivity extends AppCompatActivity {
 
 
         productos = new ArrayList<>();
-        productos.add(new ProductoComprable("Pasta dental",R.drawable.sensibio_cream,"Ejasdanoasndaodnosdnao"));
-        productos.add(new ProductoComprable("Waifu barata",R.drawable.sensibio_eye,"Ejasdanoasndaodnosdnao"));
-        productos.add(new ProductoComprable("Perro",R.drawable.sensibio_mousant,"Ejasdanoasndaodnosdnao"));
+        productos.add(new ProductoComprable("Crema especial",R.drawable.sensibio_cream,"Ejasdanoasndaodnosdnao"));
+        productos.add(new ProductoComprable("Cosa de Ojos",R.drawable.sensibio_eye,"Ejasdanoasndaodnosdnao"));
+        productos.add(new ProductoComprable("Crema para el cabello",R.drawable.sensibio_mousant,"Ejasdanoasndaodnosdnao"));
+
+        actualidad = new ArrayList<>();
+        actualidad.add(new ProductoComprable("Crema especial ++",R.drawable.sensibio_cream,"Ejasdanoasndaodnosdnao"));
+        actualidad.add(new ProductoComprable("Pasta de Ojos",R.drawable.sensibio_eye,"Ejasdanoasndaodnosdnao"));
+        actualidad.add(new ProductoComprable("Muss",R.drawable.sensibio_mousant,"Ejasdanoasndaodnosdnao"));
 
         adapter = new AdapterCardView(productos,this);
         viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(adapter);
+
+        adapter2 = new AdapterCardView(actualidad, this);
+        viewPager = findViewById(R.id.viewPagerActualidad);
+        viewPager.setAdapter(adapter2);
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
