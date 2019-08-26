@@ -16,8 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-    RadioButton btn1,btn2,btn3;
-    ImageView imagen1;
     ViewPager viewPager;
     AdapterCardView adapter;
     List<ProductoComprable> productos;
@@ -27,11 +25,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        btn1 =(RadioButton) findViewById(R.id.btn1);
-        btn2 = (RadioButton) findViewById(R.id.btn2);
-        btn3 = (RadioButton) findViewById(R.id.btn3);
-        imagen1 = findViewById(R.id.firstimage);
-        CambioDeImagen1();
 
         productos = new ArrayList<>();
         productos.add(new ProductoComprable("Pasta dental",R.drawable.sensibio_cream,"Ejasdanoasndaodnosdnao"));
@@ -71,31 +64,4 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    public void CambioDeImagen1(){
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              imagen1.setImageResource(R.drawable.ic_bronce_no_seleccionado);
-            }
-        });
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                imagen1.setImageResource(R.drawable.ic_cuadrado);
-
-            }
-        });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                imagen1.setImageResource(R.drawable.ic_logo_mi_cuenta_principal);
-            }
-        });
-
-
-
-
-
-    }
 }
