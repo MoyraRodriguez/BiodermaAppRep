@@ -1,11 +1,17 @@
 package com.example.biodermaapp.activities;
 
+import android.content.Intent;
 import android.os.Build;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,10 +19,12 @@ import com.example.biodermaapp.R;
 import com.example.biodermaapp.ajustador.RecycleViewProductoDescuento;
 import com.example.biodermaapp.entidades.ClientePrueba;
 import com.example.biodermaapp.entidades.ProductoComprable;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
 public class clubActivity extends AppCompatActivity {
+    BottomNavigationView bottomNavigationView;
     int BionCoins;
     private ClientePrueba cliente;
     private RecyclerView recyclerView;
@@ -51,6 +59,48 @@ public class clubActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(4);
+        menuItem.setChecked(true);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+
+                switch (Item.getItemId()) {
+
+                    case R.id.cuenta:
+
+                        break;
+
+                    case R.id.Producto:
+
+                        Intent intent2 = new Intent(clubActivity.this, Producto.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.Scanner:
+
+                        Intent intent3 = new Intent(clubActivity.this, MiCuenta.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.Home:
+                        Intent intent4 = new Intent(clubActivity.this, HomeActivity.class);
+                        startActivity(intent4);
+
+                        break;
+
+                    case R.id.Club:
+
+                        break;
+                }
+
+                return false;
+            }
+        });
 
 
     }

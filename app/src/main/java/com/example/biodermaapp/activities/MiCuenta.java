@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.biodermaapp.R;
@@ -20,6 +21,11 @@ public class MiCuenta extends AppCompatActivity {
         setContentView(R.layout.activity_mi_cuenta);
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(0);
+        menuItem.setChecked(true);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
@@ -43,6 +49,8 @@ public class MiCuenta extends AppCompatActivity {
                         break;
 
                     case R.id.Home:
+                        Intent intent4 = new Intent(MiCuenta.this, HomeActivity.class);
+                        startActivity(intent4);
 
                         break;
 
