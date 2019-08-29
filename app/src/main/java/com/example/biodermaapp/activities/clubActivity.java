@@ -72,6 +72,8 @@ public class clubActivity extends AppCompatActivity {
                 switch (Item.getItemId()) {
 
                     case R.id.cuenta:
+                        Intent intent1 = new Intent(clubActivity.this, MiCuenta.class);
+                        startActivity(intent1);
 
                         break;
 
