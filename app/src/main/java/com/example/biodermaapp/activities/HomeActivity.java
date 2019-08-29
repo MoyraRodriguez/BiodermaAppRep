@@ -1,9 +1,14 @@
 package com.example.biodermaapp.activities;
 
 import android.animation.ArgbEvaluator;
+
+import androidx.annotation.NonNull;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -11,12 +16,14 @@ import android.widget.RadioButton;
 import com.example.biodermaapp.R;
 import com.example.biodermaapp.ajustador.AdapterCardView;
 import com.example.biodermaapp.entidades.ProductoComprable;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
     ViewPager viewPager;
+    BottomNavigationView bottomNavigationView;
     AdapterCardView adapter, adapter2;
     List<ProductoComprable> productos, actualidad;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
@@ -24,6 +31,49 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+
+                switch (Item.getItemId()) {
+
+                    case R.id.cuenta:
+                        Intent intent1 = new Intent(HomeActivity.this,MiCuenta.class);
+                        startActivity(intent1);
+                        break;
+
+                    case R.id.Producto:
+
+                        Intent intent2 = new Intent(HomeActivity.this,Producto.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.Scanner:
+
+                        Intent intent3 = new Intent(HomeActivity.this,MiCuenta.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.Home:
+
+                        break;
+
+                    case R.id.Club:
+                        Intent intent5 = new Intent(HomeActivity.this,clubActivity.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+
+
+                return false;
+            }
+        });
+
+
 
 
         productos = new ArrayList<>();
