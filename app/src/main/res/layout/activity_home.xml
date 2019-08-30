@@ -92,7 +92,7 @@
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="32dp"
                 android:text="Actualidad"
                 android:textColor="@color/principalBlue"
                 android:textSize="24sp"

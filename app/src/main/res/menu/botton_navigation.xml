@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/cuenta"
-        android:icon="@drawable/ic_candado"
+        android:icon="@drawable/ic_botton_cuenta"
         android:title="Cuenta"/>
 
     <item
         android:id="@+id/Producto"
-        android:icon="@drawable/ic_candado"
+        android:icon="@drawable/ic_botton_producto"
         android:title="Producto"/>
 
     <item
         android:id="@+id/Scanner"
-        android:icon="@drawable/ic_candado"
+        android:icon="@drawable/ic_botton_scanner"
         android:title="Scanner"/>
 
     <item
@@ -22,7 +22,7 @@
 
     <item
         android:id="@+id/Club"
-        android:icon="@drawable/ic_candado"
+        android:icon="@drawable/ic_botton_club"
         android:title="Club"/>
 
 
