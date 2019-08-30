@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,6 +27,7 @@ import java.util.ArrayList;
 
 public class clubActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+    Button btnBeneficios;
     int BionCoins;
     private ClientePrueba cliente;
     private RecyclerView recyclerView;
@@ -38,6 +41,16 @@ public class clubActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club);
+
+        btnBeneficios = findViewById(R.id.btnBeneficios);
+        btnBeneficios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(clubActivity.this, BeneficiosActivity.class);
+                startActivity(intent);
+            }
+        });
+
         SubidaDeNivel();
         cliente = new ClientePrueba("Pepe", "jojojojo22","elpeposo@app.com");
         cliente.setBioCoins(1200);
