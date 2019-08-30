@@ -44,6 +44,13 @@ public class Producto extends AppCompatActivity {
         Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(1);
         menuItem.setChecked(true);
+
+        Intent intent = getIntent();
+
+        nombreProducto.setText( intent.getExtras().getString("Nombre"));
+       imagenProducto.setImageResource(intent.getExtras().getInt("Imagen"));
+        dataProducto.setText(intent.getExtras().getString("Descripcion"));
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
