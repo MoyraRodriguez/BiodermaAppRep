@@ -9,6 +9,7 @@
     tools:showIn="@layout/app_bar_product_menu">
 
     <androidx.recyclerview.widget.RecyclerView
+
         android:id="@+id/rvProductosMenu"
         android:layout_width="395dp"
         android:layout_height="659dp"
