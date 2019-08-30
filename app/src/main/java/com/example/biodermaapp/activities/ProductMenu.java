@@ -3,6 +3,9 @@ package com.example.biodermaapp.activities;
 import android.os.Bundle;
 
 import com.example.biodermaapp.R;
+import com.example.biodermaapp.ajustador.RVProductMenuAdapter;
+import com.example.biodermaapp.entidades.GamaProducto;
+import com.example.biodermaapp.entidades.ProductoComprable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -19,11 +22,18 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 
+import java.util.ArrayList;
+
 public class ProductMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public ArrayList<ProductoComprable> productos = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +49,28 @@ public class ProductMenu extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+
+        RecyclerView rvProductos = (RecyclerView) findViewById(R.id.rvProductosMenu);
+        RVProductMenuAdapter rvAdapter = new RVProductMenuAdapter(this,productos);
+        rvProductos.setLayoutManager(new GridLayoutManager(this,2));
+        rvProductos.setAdapter(rvAdapter);
+
+
     }
 
     @Override
