@@ -39,7 +39,7 @@ public class RecycleViewProductoDescuento extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, final int i) {
         ProductoVH productoVH = (ProductoVH) viewHolder;
         final ProductoComprable producto = productos.get(i);
 
@@ -48,15 +48,17 @@ public class RecycleViewProductoDescuento extends RecyclerView.Adapter {
             public void onClick(View v) {
                 Intent intent = new Intent(context, ProductoComprable.class);
                 context.startActivity(intent);
-                Producto.nombreProducto.setText(producto.getNombreProducto());
-                Producto.dataProducto.setText(producto.getInformacion());
-                Producto.consejos.setText(producto.getConsejos());
+                intent.putExtra("Nombre",productos.get(i).getNombreProducto());
+                intent.putExtra("Descripcion",productos.get(i).getInformacion());
+                intent.putExtra("Imagen", productos.get(i).getImagen());
+                context.startActivity(intent);
             }
         });
         productoVH.nombreProdDesc.setText(producto.getNombreProducto());
         productoVH.fechaLimite.setText(producto.getFechaLimiteDescuento() +"");
         productoVH.precioProdDesc.setText(producto.getDescuentoProducto()+"");
-       // productoVH.imagenProDesc.setImageResource(producto.getImagen());
+        productoVH.imagenProDesc.setImageResource(producto.getImagen());
+
     }
 
     @Override

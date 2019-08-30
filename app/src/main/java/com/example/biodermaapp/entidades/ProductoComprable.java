@@ -44,11 +44,12 @@ public class ProductoComprable {
         this.gama = gama;
     }
 
-    public ProductoComprable(String nombreProducto, /*int imagen,*/ double descuentoProducto, double fechaLimiteDescuento) {
+    public ProductoComprable(String nombreProducto, int imagen,double descuentoProducto, double fechaLimiteDescuento, String informacion) {
         this.nombreProducto = nombreProducto;
-        //this.imagen = imagen;
+        this.imagen = imagen;
         this.descuentoProducto = descuentoProducto;
         this.fechaLimiteDescuento = fechaLimiteDescuento;
+        this.informacion = informacion;
     }
 
     public String getNombreProducto() {

@@ -48,7 +48,7 @@ public class Producto extends AppCompatActivity {
         Intent intent = getIntent();
 
         nombreProducto.setText( intent.getExtras().getString("Nombre"));
-       imagenProducto.setImageResource(intent.getExtras().getInt("Imagen"));
+        imagenProducto.setImageResource(intent.getExtras().getInt("Imagen"));
         dataProducto.setText(intent.getExtras().getString("Descripcion"));
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

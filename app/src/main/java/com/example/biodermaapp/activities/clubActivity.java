@@ -42,11 +42,11 @@ public class clubActivity extends AppCompatActivity {
         cliente = new ClientePrueba("Pepe", "jojojojo22","elpeposo@app.com");
         cliente.setBioCoins(1200);
         BionCoins = cliente.getBioCoins();
-        p1 = new ProductoComprable("Papas",0.15,12.2);
-        p2 = new ProductoComprable("Papas",0.15,12.2);
-        p3 = new ProductoComprable("Papas",0.15,12.2);
-        p4 = new ProductoComprable("Papas",0.15,12.2);
-        p5 = new ProductoComprable("Papas",0.15,12.2);
+        p1 = new ProductoComprable("Papas",R.drawable.sensibio_eye,0.15,12.2,"Para el cuerpo");
+        p2 = new ProductoComprable("Papas",R.drawable.sensibio_eye,0.15,12.2,"Para el cuerpo");
+        p3 = new ProductoComprable("Papas",R.drawable.sensibio_eye,0.15,12.2,"Para el cuerpo");
+        p4 = new ProductoComprable("Papas",R.drawable.sensibio_eye,0.15,12.2,"Para el cuerpo");
+        p5 = new ProductoComprable("Papas",R.drawable.sensibio_eye,0.15,12.2,"Para el cuerpo");
 
         productoComprables.add(p1);
         productoComprables.add(p2);
