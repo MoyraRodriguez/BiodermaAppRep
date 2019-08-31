@@ -164,4 +164,17 @@
         app:layout_constraintVertical_bias="0.517"
         app:srcCompat="@drawable/ic_correo" />
 
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonFacebookLogin"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancelar" />
+    "
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
