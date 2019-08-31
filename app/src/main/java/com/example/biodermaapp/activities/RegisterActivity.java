@@ -107,6 +107,9 @@ public class RegisterActivity extends AppCompatActivity {
     private void updateUI() {
 
         Toast.makeText(this, "Ya has iniciado sesion en Facebook", Toast.LENGTH_SHORT).show();
+        Intent  change = new Intent(RegisterActivity.this, HomeActivity.class);
+        startActivity(change);
+        finish();
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
