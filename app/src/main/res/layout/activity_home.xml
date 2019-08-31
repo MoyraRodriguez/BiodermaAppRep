@@ -18,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/botton_navigation">
+        app:menu="@menu/botton_navigation"
+        app:itemTextColor="#fff">
 
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -124,17 +125,8 @@
                 android:paddingTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="21dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextEnviarCorreo"
-                app:layout_constraintStart_toStartOf="@+id/editTextEnviarCorreo"
-                app:layout_constraintTop_toTopOf="@+id/editTextEnviarCorreo"
-                app:srcCompat="@drawable/ic_correo" />
+                app:layout_constraintTop_toBottomOf="@+id/textView18"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/textView18"
@@ -146,7 +138,8 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewPagerActualidad" />
+                app:layout_constraintTop_toBottomOf="@+id/viewPagerActualidad"
+                android:visibility="gone"/>
 
             <Button
                 android:id="@+id/btnTwitter"

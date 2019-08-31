@@ -17,11 +17,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="4dp"
+        android:background="#334D6B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/botton_navigation"
-        android:background="#334D6B">
+        app:menu="@menu/botton_navigation">
 
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -37,12 +37,16 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="715dp"
             android:layout_marginEnd="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.016"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="8dp">
 
 
             <TextView
@@ -105,60 +109,41 @@
                 app:layout_constraintTop_toBottomOf="@+id/SaldoBioCoins" />
 
             <TextView
-                android:id="@+id/linea12"
+                android:id="@+id/linea"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="28dp"
                 android:background="#334D6B"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnBeneficios" />
-
-            <TextView
-                android:id="@+id/linea"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="8dp"
-                android:background="#334D6B"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Orotxt" />
-
-            <TextView
-                android:id="@+id/linea10"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="18dp"
-                android:background="#334D6B"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
 
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-
-                android:layout_marginTop="8dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:background="#334D6B"
                 android:gravity="center"
+
+
                 android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linea10">
+                app:layout_constraintTop_toBottomOf="@+id/linea19">
 
 
                 <ImageButton
-                    android:id="@+id/btnBronce"
+                    android:id="@+id/btnHistorial"
                     android:layout_width="76dp"
                     android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
                     android:background="#ffff"
-
 
                     android:cropToPadding="false"
                     android:paddingBottom="20dp"
@@ -167,13 +152,14 @@
                     app:layout_constraintBottom_toTopOf="@+id/linea13"
                     app:layout_constraintTop_toBottomOf="@+id/textView13"
                     app:layout_constraintVertical_bias="0.587"
-                    app:srcCompat="@drawable/ic_bronce_no_seleccionado"
+                    app:srcCompat="@drawable/ic_club_beneficios"
                     tools:layout_editor_absoluteX="0dp" />
 
                 <ImageButton
-                    android:id="@+id/btnOro"
+                    android:id="@+id/btnBeneficios"
                     android:layout_width="76dp"
                     android:layout_height="74dp"
+                    android:layout_marginRight="5dp"
 
 
                     android:background="#ffff"
@@ -181,13 +167,14 @@
                     app:layout_constraintBottom_toBottomOf="@+id/btnPlata"
                     app:layout_constraintStart_toEndOf="@+id/btnPlata"
                     app:layout_constraintTop_toTopOf="@+id/btnPlata"
-                    app:srcCompat="@drawable/ic_plata_no_seleccionado" />
+                    app:srcCompat="@drawable/ic_club_niveles" />
 
 
                 <ImageButton
-                    android:id="@+id/btnPlata"
+                    android:id="@+id/btnCupones"
                     android:layout_width="76dp"
                     android:layout_height="74dp"
+                    android:layout_marginRight="5dp"
 
 
                     android:background="#ffff"
@@ -196,10 +183,10 @@
                     app:layout_constraintBottom_toBottomOf="@+id/btnBronce"
                     app:layout_constraintStart_toEndOf="@+id/btnBronce"
                     app:layout_constraintTop_toTopOf="@+id/btnBronce"
-                    app:srcCompat="@drawable/ic_oro_no_seleccionado" />
+                    app:srcCompat="@drawable/ic_club_cupones" />
 
                 <ImageButton
-                    android:id="@+id/btnPlatino"
+                    android:id="@+id/btnNiveles"
                     android:layout_width="76dp"
                     android:layout_height="74dp"
 
@@ -210,51 +197,41 @@
                     app:layout_constraintStart_toEndOf="@+id/btnOro"
                     app:layout_constraintTop_toTopOf="@+id/btnOro"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/ic_platino_no_seleccionado" />
-
-                <ImageButton
-                    android:id="@+id/btnDiamante"
-                    android:layout_width="76dp"
-                    android:layout_height="74dp"
-                    android:background="#ffff"
+                    app:srcCompat="@drawable/ic_club_niveles" />
 
 
-                    android:cropToPadding="false"
-                    android:paddingBottom="20dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/btnPlatino"
-                    app:layout_constraintStart_toEndOf="@+id/btnPlatino"
-                    app:layout_constraintTop_toTopOf="@+id/btnPlatino"
-                    app:srcCompat="@drawable/ic_diamante_no_seleccionado" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/Orotxt"
-                android:layout_width="29dp"
-                android:layout_height="17dp"
-                android:layout_marginStart="8dp"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="18dp"
                 android:layout_marginTop="55dp"
                 android:layout_marginBottom="8dp"
-                android:text="Oro"
+                android:text="Cupones"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintHorizontal_bias="0.598"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout"
-                app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/Platatxt"
-                android:layout_width="38dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="43dp"
-                android:text="Plata"
+                android:layout_width="72dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="16dp"
+                android:text="Beneficios"
 
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
                 app:layout_constraintEnd_toStartOf="@+id/Orotxt"
-                app:layout_constraintTop_toTopOf="@+id/Orotxt" />
+                app:layout_constraintTop_toTopOf="@+id/Orotxt"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/Platinotxt"
@@ -262,9 +239,9 @@
                 android:layout_height="16dp"
 
 
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginBottom="8dp"
-                android:text="Platino"
+                android:text="Niveles"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
@@ -272,27 +249,14 @@
                 app:layout_constraintTop_toTopOf="@+id/Orotxt"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/Diamantetxt"
-                android:layout_width="64dp"
-                android:layout_height="16dp"
-
-                android:layout_marginStart="20dp"
-                android:text="Diamante"
-                android:textAlignment="center"
-                android:textColor="#334D6B"
-                app:layout_constraintBottom_toBottomOf="@+id/Platinotxt"
-                app:layout_constraintStart_toEndOf="@+id/Platinotxt"
-                app:layout_constraintTop_toTopOf="@+id/Platinotxt"
-                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/Broncetxt"
-                android:layout_width="49dp"
+                android:layout_width="71dp"
                 android:layout_height="16dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="8dp"
 
-                android:text="Bronce"
+                android:text="Historial"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="@+id/Platatxt"
@@ -418,74 +382,10 @@
                 android:id="@+id/recycleViewClub"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView20">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvClub"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Button
-                android:id="@+id/btnBeneficios"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:text="Ver Beneficios"
-                android:textAllCaps="true"
-
-
-                android:textColor="#334D6B"
-                android:textStyle="italic"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linea" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="200dp"
-                android:text="Lista de cupones:"
-                android:textColor="#334D6B"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.692"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linea12" />
-
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="200dp"
-                android:text="Niveles:"
-                android:textColor="#334D6B"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.214"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linea19" />
+                tools:layout_editor_absoluteY="738dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
