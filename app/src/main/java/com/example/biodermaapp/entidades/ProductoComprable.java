@@ -16,17 +16,16 @@ public class ProductoComprable {
     private String consejos;
 
 
-    public ProductoComprable(String nombreProducto, String urlImagen, int imagen, String indicaciones, String beneficios, String informacion,
-                             String formato, GamaProducto gama, double costoProducto, double descuentoProducto, double fechaLimiteDescuento) {
+    public ProductoComprable(String nombreProducto, int imagen, String indicaciones, String beneficios, String informacion,
+                             String formato, GamaProducto gama, double descuentoProducto, double fechaLimiteDescuento) {
         this.nombreProducto = nombreProducto;
-        this.urlImagen = urlImagen;
+
         this.imagen = imagen;
         this.indicaciones = indicaciones;
         this.beneficios = beneficios;
         this.informacion = informacion;
         this.formato = formato;
         this.gama = gama;
-        this.costoProducto = costoProducto;
         this.descuentoProducto = descuentoProducto;
         this.fechaLimiteDescuento = fechaLimiteDescuento;
     }

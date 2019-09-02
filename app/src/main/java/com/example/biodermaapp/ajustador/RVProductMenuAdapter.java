@@ -53,8 +53,13 @@ public class RVProductMenuAdapter extends RecyclerView.Adapter<RVProductMenuAdap
             public void onClick(View v) {
                 Intent intentRV = new Intent(mContext, Producto.class);
                 intentRV.putExtra("Nombre",productos.get(position).getNombreProducto());
-                intentRV.putExtra("Descripcion",productos.get(position).getInformacion());
+                intentRV.putExtra("Information",productos.get(position).getInformacion());
                 intentRV.putExtra("Imagen", productos.get(position).getImagen());
+               intentRV.putExtra("Beneficios", productos.get(position).getBeneficios());
+               intentRV.putExtra("Indicaciones",productos.get(position).getIndicaciones());
+               intentRV.putExtra("Formato",productos.get(position).getFormato());
+               intentRV.putExtra("Consejos",productos.get(position).getConsejos());
+
                 mContext.startActivity(intentRV);
             }
         });
