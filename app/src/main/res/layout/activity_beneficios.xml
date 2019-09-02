@@ -47,6 +47,7 @@
         app:srcCompat="@drawable/ic_flecha_back" />
 
     <TextView
+        android:fontFamily="@font/sourcesanspro_bold"
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,6 +69,7 @@
 
 
         android:background="@drawable/custom_button_borders"
+        android:fontFamily="@font/sourcesanspro_bold"
 
 
         android:paddingLeft="60dp"
@@ -87,6 +89,8 @@
         android:background="@drawable/custom_button_borders"
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
+        android:fontFamily="@font/sourcesanspro_bold"
+
 
 
         android:text="Button"
@@ -253,6 +257,7 @@
         android:id="@+id/Platinotxt"
         android:layout_width="49dp"
         android:layout_height="16dp"
+        android:textColor="#334D6B"
 
 
         android:layout_marginStart="36dp"
