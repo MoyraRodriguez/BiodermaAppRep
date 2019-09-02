@@ -7,7 +7,9 @@
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:background="@drawable/ic_linea_horizontal"
-    android:backgroundTint="@color/principalBlue"
+    android:backgroundTint="#334B68"
+
+
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
     cardview:cardCornerRadius="4dp">

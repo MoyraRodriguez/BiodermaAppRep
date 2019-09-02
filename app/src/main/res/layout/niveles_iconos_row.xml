@@ -27,6 +27,7 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:scaleType="centerCrop"
+
                 android:layout_centerHorizontal="true"
                 android:id="@+id/IconoNivel"
                 android:src="@drawable/ic_bronce_no_seleccionado"

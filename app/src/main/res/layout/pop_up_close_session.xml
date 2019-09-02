@@ -47,6 +47,7 @@
             </LinearLayout>
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/cerrarSesionText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,6 +60,7 @@
                 />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/textoDeCerrarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -73,6 +75,7 @@
                 />
 
             <Button
+                android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/buttonCerrarSesionPopUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
