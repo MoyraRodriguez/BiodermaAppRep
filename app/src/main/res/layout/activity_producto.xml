@@ -133,7 +133,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:text="Consejos de Uso"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334D6B"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/productButtonLY" />
@@ -157,7 +157,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:text="Productos Complementarios"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334D6B"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvConsejosUso" />

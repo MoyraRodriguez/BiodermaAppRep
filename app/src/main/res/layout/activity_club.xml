@@ -31,10 +31,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -251,18 +252,6 @@
 
 
             <TextView
-                android:id="@+id/linea11"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="280dp"
-                android:background="@drawable/blue_rectangle"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recycleViewClub" />
-
-
-            <TextView
                 android:id="@+id/SaldoBioCoins"
                 android:layout_width="140dp"
                 android:layout_height="40dp"
@@ -297,7 +286,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="BioCoins Disponibles"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334D6B"
                 android:textSize="15dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/imageView17"
@@ -362,15 +351,6 @@
                 app:layout_constraintStart_toStartOf="@+id/linea9"
                 app:layout_constraintTop_toBottomOf="@+id/linea9"
                 app:srcCompat="@drawable/ic_bcrecurso_1capas" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/recycleViewClub"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="738dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

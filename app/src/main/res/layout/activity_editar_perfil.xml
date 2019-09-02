@@ -29,7 +29,7 @@
                 android:id="@+id/linea6"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:background="@drawable/blue_rectangle"
+                android:background="#334B68"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -47,6 +47,7 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

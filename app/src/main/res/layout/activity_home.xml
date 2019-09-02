@@ -63,6 +63,7 @@
                 app:srcCompat="@drawable/ic_biodema_logo_3" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
                 android:text="Productos"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334B68"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +90,7 @@
             </androidx.viewpager.widget.ViewPager>
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -168,7 +170,7 @@
                 android:layout_marginBottom="32dp"
                 android:text="La biología al servicio de la dermatologia"
                 android:textAlignment="center"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334B68"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
