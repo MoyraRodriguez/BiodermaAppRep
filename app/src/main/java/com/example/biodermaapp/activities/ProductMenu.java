@@ -50,20 +50,24 @@ public class ProductMenu extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
-        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_mousant,"Para la piel", GamaProducto.Hydrabio));
+
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
+        productos.add(new ProductoComprable("Bioderma pr1",R.drawable.sensibio_cream,"usar en la piel","es bueno para la piel","puede comprarlo en cualquier puesto de bioderma", "formato comprable",GamaProducto.Atoderm,125.00,123.34));
 
         RecyclerView rvProductos = (RecyclerView) findViewById(R.id.rvProductosMenu);
         RVProductMenuAdapter rvAdapter = new RVProductMenuAdapter(this,productos);
