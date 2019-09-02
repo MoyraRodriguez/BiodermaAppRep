@@ -107,6 +107,19 @@
                 app:layout_constraintTop_toBottomOf="@+id/telefonoMICuenta" />
 
             <TextView
+                android:id="@+id/linea10"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="#334B68"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SaldoBioCoins" />
+
+            <TextView
                 android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/SaldoBioCoins"
                 android:layout_width="wrap_content"
@@ -172,10 +185,11 @@
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SaldoBioCoins"
+                app:layout_constraintTop_toBottomOf="@+id/linea10"
                 app:srcCompat="@drawable/ic_telefono" />
 
             <TextView
+
                 android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
@@ -192,6 +206,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/telefonoMICuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -214,12 +229,13 @@
                 app:srcCompat="@drawable/ic_genero_otro" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Genero"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334B68"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -227,6 +243,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageGeneroMiCuenta" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_black"
+
                 android:id="@+id/generoMICuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -264,12 +282,13 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Fecha de Nacimiento"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334B68"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -277,6 +296,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageFechaNacMiCuenta" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/fechaNacMICuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -314,12 +334,13 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Lugar de Origen"
-                android:textColor="@color/principalBlue"
+                android:textColor="#334B68"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -327,6 +348,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageLugarOrigen" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/lugarOrigenMICuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -357,8 +379,10 @@
                 android:id="@+id/buttonCerrarSesion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="104dp"
                 android:background="@drawable/ic_fondolleno"
                 android:text="Cerrar Sesion"
                 android:textColor="@color/colorAccent"
