@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,6 +29,7 @@ import java.util.ArrayList;
 public class clubActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     Button btnBeneficios;
+    ImageButton btnNiveles,btnCupones,btnHistorial;
     int BionCoins;
     private ClientePrueba cliente;
     private RecyclerView recyclerView;
@@ -42,14 +44,15 @@ public class clubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club);
 
-        btnBeneficios = findViewById(R.id.btnBeneficios);
-        btnBeneficios.setOnClickListener(new View.OnClickListener() {
+        btnNiveles = findViewById(R.id.btnNiveles);
+        btnNiveles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(clubActivity.this, BeneficiosActivity.class);
                 startActivity(intent);
             }
         });
+
 
         SubidaDeNivel();
         cliente = new ClientePrueba("Pepe", "jojojojo22","elpeposo@app.com");
@@ -67,11 +70,8 @@ public class clubActivity extends AppCompatActivity {
         productoComprables.add(p4);
         productoComprables.add(p5);
 
-        recyclerView = findViewById(R.id.rvClub);
-        RecycleViewProductoDescuento adapter = new RecycleViewProductoDescuento(productoComprables);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(adapter);
+
+
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);

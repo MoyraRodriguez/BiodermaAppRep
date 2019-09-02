@@ -10,17 +10,18 @@
         android:id="@+id/textUsuario2"
         android:layout_width="307dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/ic_cuadro"
         android:ems="10"
         android:hint="Nombre de Usuario"
         android:inputType="textPersonName"
-        android:paddingLeft="50dp
-"
+        android:paddingLeft="50dp"
         app:layout_constraintEnd_toEndOf="@+id/textViewSesion4"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/textViewSesion4"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSesion4" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSesion4">
+
+    </EditText>
+"
 
     <Button
         android:id="@+id/buttonCancelar"
@@ -82,11 +83,12 @@
         android:id="@+id/icono"
         android:layout_width="19dp"
         android:layout_height="21dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/textUsuario2"
+        app:layout_constraintStart_toStartOf="@+id/textUsuario2"
         app:layout_constraintTop_toTopOf="@+id/textUsuario2"
-        app:layout_constraintVertical_bias="0.586"
-        app:srcCompat="@drawable/ic_usuariologo"
-        tools:layout_editor_absoluteX="68dp" />
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_usuariologo" />
 
     <TextView
         android:id="@+id/textViewSesion4"
