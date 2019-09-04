@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/principalBlue"
+        app:cardBackgroundColor="#334D6B"
         app:cardCornerRadius="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,6 +31,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
+
                 android:id="@+id/title"
                 android:layout_width="267dp"
                 android:layout_height="wrap_content"
@@ -41,12 +43,13 @@
                 android:text="Nombre Producto"
                 android:textAlignment="center"
                 android:textColor="@color/colorAccent"
-                android:textSize="16sp"
+                android:textSize="26sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_black"
                 android:id="@+id/desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,6 +59,7 @@
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
                 android:maxLines="3"
+                android:textSize="15dp"
                 android:text="Description"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintBottom_toBottomOf="parent"

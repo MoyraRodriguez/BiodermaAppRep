@@ -22,16 +22,23 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
+import technolifestyle.com.imageslider.FlipperLayout;
+import technolifestyle.com.imageslider.FlipperView;
+
 public class HomeActivity extends AppCompatActivity {
     ViewPager viewPager;
     BottomNavigationView bottomNavigationView;
     AdapterCardView adapter, adapter2;
     List<ProductoComprable> productos, actualidad;
+    FlipperLayout flipperLayout;
+
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        flipperLayout = findViewById(R.id.flipper);
+        setLaout();
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         Menu menu = bottomNavigationView.getMenu();
@@ -125,6 +132,21 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
+    private void setLaout(){
+        int image[] = new int[] {
+                R.drawable.prueba1,
+                R.drawable.prueba2,
+                R.drawable.prueba3
 
+        };
+
+        for(int i = 0; i<3;i++){
+            FlipperView view = new FlipperView(getBaseContext());
+            view.setImageDrawable(image[i]).setDescription("Bioderma"+(i+1));
+            flipperLayout.addFlipperView(view);
+
+        }
+
+    }
 
 }
