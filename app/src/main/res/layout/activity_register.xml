@@ -24,6 +24,8 @@
 "
 
     <Button
+        android:fontFamily="@font/sourcesanspro_bold"
+
         android:id="@+id/buttonCancelar"
         android:layout_width="121dp"
         android:layout_height="52dp"
@@ -37,6 +39,8 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <Button
+        android:fontFamily="@font/sourcesanspro_bold"
+
         android:id="@+id/buttonIngresar"
         android:layout_width="121dp"
         android:layout_height="52dp"
@@ -80,6 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
 
     <ImageView
+
         android:id="@+id/icono"
         android:layout_width="19dp"
         android:layout_height="21dp"
@@ -91,6 +96,9 @@
         app:srcCompat="@drawable/ic_usuariologo" />
 
     <TextView
+        android:fontFamily="@font/sourcesanspro_bold"
+
+
         android:id="@+id/textViewSesion4"
         android:layout_width="101dp"
         android:layout_height="26dp"

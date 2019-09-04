@@ -262,6 +262,7 @@
                 app:srcCompat="@drawable/ic_lugar" />
 
             <Button
+                android:fontFamily="@font/sourcesanspro_bold"
                 android:id="@+id/buttonCerrarSesion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

@@ -7,6 +7,8 @@
     tools:context=".activities.RecuperarCuentaActivity">
 
     <Button
+        android:fontFamily="@font/sourcesanspro_bold"
+
         android:id="@+id/buttonEnviar"
         android:layout_width="343dp"
         android:layout_height="44dp"
@@ -19,6 +21,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
+
         android:id="@+id/imageView4"
         android:layout_width="21dp"
         android:layout_height="21dp"
@@ -42,6 +45,8 @@
         app:srcCompat="@drawable/ic_logobioazul" />
 
     <TextView
+        android:fontFamily="@font/sourcesanspro_bold"
+
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,9 +60,11 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="245dp"
-        android:layout_height="62dp"
+
+        android:layout_width="246dp"
+        android:layout_height="70dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/sourcesanspro_bold"
         android:text="Enviaremos un mensaje a este correo con su nueva contraseña"
         android:textAlignment="center"
         android:textColor="@android:color/black"

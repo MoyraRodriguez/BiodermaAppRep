@@ -83,10 +83,13 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
 
+
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
+
                 android:id="@+id/tvNombreProducto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,6 +116,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvNombreProducto" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
+
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,6 +133,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/viewPagerProducto" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
+
                 android:id="@+id/tvConsejosUso"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -139,6 +146,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
+
                 android:id="@+id/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -151,6 +160,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvConsejosUso" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_bold"
+
                 android:id="@+id/tvNombreProductoComplementario"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
