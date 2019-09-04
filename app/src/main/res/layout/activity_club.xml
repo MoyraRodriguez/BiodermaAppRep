@@ -128,8 +128,8 @@
                     android:id="@+id/btnHistorial"
                     android:layout_width="76dp"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="5dp"
-                    android:background="#ffff"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_button"
 
                     android:cropToPadding="false"
                     android:paddingBottom="20dp"
@@ -145,10 +145,10 @@
                     android:id="@+id/btnBeneficios"
                     android:layout_width="76dp"
                     android:layout_height="74dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="10dp"
 
 
-                    android:background="#ffff"
+                    android:background="@drawable/circle_button"
                     android:paddingBottom="20dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btnPlata"
                     app:layout_constraintStart_toEndOf="@+id/btnPlata"
@@ -160,10 +160,9 @@
                     android:id="@+id/btnCupones"
                     android:layout_width="76dp"
                     android:layout_height="74dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="10dp"
 
-
-                    android:background="#ffff"
+                    android:background="@drawable/circle_button"
                     android:paddingBottom="20dp"
 
                     app:layout_constraintBottom_toBottomOf="@+id/btnBronce"
@@ -175,9 +174,10 @@
                     android:id="@+id/btnNiveles"
                     android:layout_width="76dp"
                     android:layout_height="74dp"
+                    android:layout_marginRight="10dp"
 
 
-                    android:background="#ffff"
+                    android:background="@drawable/circle_button"
                     android:paddingBottom="20dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btnOro"
                     app:layout_constraintStart_toEndOf="@+id/btnOro"
@@ -190,34 +190,33 @@
 
             <TextView
                 android:id="@+id/Orotxt"
-                android:layout_width="60dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="55dp"
+                android:layout_width="57dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="25dp"
+
+                android:layout_marginTop="26dp"
                 android:layout_marginBottom="8dp"
                 android:text="Cupones"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
-                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-                app:layout_constraintHorizontal_bias="0.598"
-                app:layout_constraintStart_toStartOf="@+id/linearLayout"
-                app:layout_constraintTop_toTopOf="@+id/linearLayout"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Platatxt"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
             <TextView
                 android:id="@+id/Platatxt"
-                android:layout_width="72dp"
-                android:layout_height="18dp"
-                android:layout_marginEnd="16dp"
-                android:text="Beneficios"
+                android:layout_width="67dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="22dp"
 
+
+                android:text="Beneficios"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
+                android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
-                app:layout_constraintEnd_toStartOf="@+id/Orotxt"
-                app:layout_constraintTop_toTopOf="@+id/Orotxt"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintStart_toEndOf="@+id/Broncetxt"
+                app:layout_constraintTop_toTopOf="@+id/Orotxt" />
 
             <TextView
                 android:id="@+id/Platinotxt"
@@ -225,30 +224,26 @@
                 android:layout_height="16dp"
 
 
-                android:layout_marginStart="25dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="34dp"
                 android:text="Niveles"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
                 app:layout_constraintStart_toEndOf="@+id/Orotxt"
-                app:layout_constraintTop_toTopOf="@+id/Orotxt"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="@+id/Orotxt" />
 
 
             <TextView
                 android:id="@+id/Broncetxt"
-                android:layout_width="71dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="61dp"
+                android:layout_height="17dp"
 
                 android:text="Historial"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="@+id/Platatxt"
-                app:layout_constraintEnd_toStartOf="@+id/Platatxt"
                 app:layout_constraintTop_toTopOf="@+id/Platatxt"
-                app:layout_constraintVertical_bias="0.0" />
+                tools:layout_editor_absoluteX="41dp" />
 
 
             <TextView
