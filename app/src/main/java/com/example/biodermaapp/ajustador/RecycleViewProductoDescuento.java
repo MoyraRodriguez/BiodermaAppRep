@@ -22,8 +22,8 @@ public class RecycleViewProductoDescuento extends RecyclerView.Adapter {
     private ArrayList<ProductoComprable> productos;
    private Context context;
 
-    public RecycleViewProductoDescuento(ArrayList<ProductoComprable> productos) {
-
+    public RecycleViewProductoDescuento(ArrayList<ProductoComprable> productos, Context context) {
+        this.context = context;
         this.productos = productos;
     }
 
@@ -43,7 +43,7 @@ public class RecycleViewProductoDescuento extends RecyclerView.Adapter {
         ProductoVH productoVH = (ProductoVH) viewHolder;
         final ProductoComprable producto = productos.get(i);
 
-        productoVH.padre.setOnClickListener(new View.OnClickListener() {
+      /*  productoVH.padre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ProductoComprable.class);
@@ -53,7 +53,7 @@ public class RecycleViewProductoDescuento extends RecyclerView.Adapter {
                 intent.putExtra("Imagen", productos.get(i).getImagen());
                 context.startActivity(intent);
             }
-        });
+        });*/
         productoVH.nombreProdDesc.setText(producto.getNombreProducto());
         productoVH.fechaLimite.setText(producto.getFechaLimiteDescuento() +"");
         productoVH.precioProdDesc.setText(producto.getDescuentoProducto()+"");
