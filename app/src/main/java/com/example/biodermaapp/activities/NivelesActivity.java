@@ -19,7 +19,7 @@ public class NivelesActivity extends AppCompatActivity {
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
     TextView Informacion, Informacion2,Broncetxt,Platatxt,Orotxt,Platinotxt,Diamantetxt;
-    ImageButton btnBronce,btnPlata,btnOro,btnPlatino,btnDiamante;
+    ImageButton btnBronce,btnPlata,btnOro,btnPlatino,btnDiamante,btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class NivelesActivity extends AppCompatActivity {
         btnOro = findViewById(R.id.btnOro);
         btnPlatino = findViewById(R.id.btnPlatino);
         btnDiamante = findViewById(R.id.btnDiamante);
+        btnBack = findViewById(R.id.btnback);
 
         //textos
         Broncetxt = findViewById(R.id.Broncetxt);
@@ -54,6 +55,14 @@ public class NivelesActivity extends AppCompatActivity {
 
         MostrarInformacion();
         CambiodeDescuento();
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
 
 
 
