@@ -5,29 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.example.biodermaapp.R;
-import com.example.biodermaapp.Tab1Producto;
-import com.example.biodermaapp.Tab2Producto;
-import com.example.biodermaapp.Tab3Producto;
-import com.example.biodermaapp.Tab4Producto;
-import com.example.biodermaapp.ajustador.AdapterCardView;
 import com.example.biodermaapp.ajustador.AdapterTextProducto;
-import com.example.biodermaapp.entidades.ProductoComprable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Producto extends AppCompatActivity implements Tab1Producto.OnFragmentInteractionListener, Tab2Producto.OnFragmentInteractionListener, Tab3Producto.OnFragmentInteractionListener, Tab4Producto.OnFragmentInteractionListener {
+public class Producto extends AppCompatActivity {
 
     ViewPager viewPager;
     public static TextView nombreProducto, dataProducto, consejos,nombreComplementario;
@@ -115,8 +107,5 @@ public class Producto extends AppCompatActivity implements Tab1Producto.OnFragme
     }
 
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
 }

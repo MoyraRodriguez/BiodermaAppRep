@@ -16,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.biodermaapp.R;
-import com.example.biodermaapp.ScannerActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MiCuenta extends AppCompatActivity {

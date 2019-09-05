@@ -4,15 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.biodermaapp.R;
-import com.example.biodermaapp.ScannerActivity;
 import com.example.biodermaapp.ajustador.RVProductMenuAdapter;
 import com.example.biodermaapp.entidades.GamaProducto;
 import com.example.biodermaapp.entidades.ProductoComprable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
@@ -32,7 +27,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.Menu;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class ProductMenu extends AppCompatActivity
 

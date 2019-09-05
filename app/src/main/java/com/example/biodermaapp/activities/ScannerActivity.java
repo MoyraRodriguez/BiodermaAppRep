@@ -1,14 +1,16 @@
-package com.example.biodermaapp;
+package com.example.biodermaapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class HistorialActivity extends AppCompatActivity {
+import com.example.biodermaapp.R;
+
+public class ScannerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_historial);
+        setContentView(R.layout.activity_scanner);
     }
 }

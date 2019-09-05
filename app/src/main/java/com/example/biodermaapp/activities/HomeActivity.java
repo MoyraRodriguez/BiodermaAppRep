@@ -10,12 +10,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.RadioButton;
 
 import com.example.biodermaapp.R;
-import com.example.biodermaapp.ScannerActivity;
 import com.example.biodermaapp.ajustador.AdapterCardView;
 import com.example.biodermaapp.entidades.ProductoComprable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

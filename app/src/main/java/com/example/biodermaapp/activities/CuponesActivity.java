@@ -1,14 +1,16 @@
-package com.example.biodermaapp;
+package com.example.biodermaapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class BeneficiosActivity extends AppCompatActivity {
+import com.example.biodermaapp.R;
+
+public class CuponesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beneficios);
+        setContentView(R.layout.activity_cupones);
     }
 }

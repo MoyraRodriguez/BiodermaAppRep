@@ -17,9 +17,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.biodermaapp.BeneficiosActivity;
-import com.example.biodermaapp.CuponesActivity;
-import com.example.biodermaapp.HistorialActivity;
 import com.example.biodermaapp.R;
 import com.example.biodermaapp.entidades.ClientePrueba;
 import com.example.biodermaapp.entidades.ProductoComprable;
