@@ -11,12 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScannerActivity"></activity>
+        <activity android:name=".BeneficiosActivity"></activity>
+        <activity android:name=".CuponesActivity" />
+        <activity android:name=".HistorialActivity" />
+        <activity android:name=".ScannerActivity" />
         <activity
             android:name=".activities.ProductMenu"
             android:label="@string/title_activity_product_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.BeneficiosActivity" />
+        <activity android:name=".activities.NivelesActivity" />
         <activity android:name=".activities.clubActivity" />
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.Producto" />

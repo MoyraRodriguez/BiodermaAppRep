@@ -15,12 +15,14 @@
     <string name="facebook_app_id">631438467349320</string>
     <string name="fb_login_protocol_scheme">fb631438467349320</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="bio_Sensibio">Sensibio</string>
+    <string name="bio_Hydrabio">Hydrabio</string>
+    <string name="bio_Atoderm">Atoderm</string>
+    <string name="bio_Sebium">Sebium</string>
+    <string name="bio_Node">Node</string>
+    <string name="bio_Photoderm">Photoderm</string>
+    <string name="bio_White">White Objective</string>
+    <string name="bio_Cicabio">Cicabio</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

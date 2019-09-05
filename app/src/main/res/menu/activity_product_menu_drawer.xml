@@ -6,32 +6,51 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@drawable/ic_purple_ball"
+            android:title="@string/bio_Sensibio" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:icon="@drawable/ic_blue_ball"
+            android:title="@string/bio_Hydrabio" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:icon="@drawable/ic_dark_blue_ball"
+            android:title="@string/bio_Atoderm" />
         <item
             android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:icon="@drawable/ic_light_green_ball"
+            android:title="@string/bio_Sebium" />
+        <item
+            android:id="@+id/pue3"
+            android:icon="@drawable/ic_orange_ball"
+            android:title="@string/bio_Node" />
+        <item
+            android:id="@+id/pue5"
+            android:icon="@drawable/ic_dark_green_ball"
+
+            android:title="@string/bio_Photoderm" />
+        <item
+            android:id="@+id/pue6"
+            android:icon="@drawable/ic_dark_green_ball"
+
+            android:title="@string/bio_White" />
+        <item
+            android:id="@+id/pue7"
+            android:icon="@drawable/ic_dark_green_ball"
+
+            android:title="@string/bio_Cicabio" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
+                android:icon="@drawable/ic_orange_ball"
+                android:title="@string/bio_Cicabio" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:icon="@drawable/ic_dark_green_ball"
+                android:title="@string/bio_Cicabio" />
         </menu>
     </item>
 

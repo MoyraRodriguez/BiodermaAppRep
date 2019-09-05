@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.example.biodermaapp.R;
 
-public class BeneficiosActivity extends AppCompatActivity {
+public class NivelesActivity extends AppCompatActivity {
 
     ViewGroup tConteiner;
     Button Descuento1, Descuento2;
@@ -25,7 +25,7 @@ public class BeneficiosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_beneficios);
+        setContentView(R.layout.activity_niveles);
         Descuento1 = findViewById(R.id.Descuento1);
         Descuento2 = findViewById(R.id.descuento2);
         Informacion = findViewById(R.id.Informacion);

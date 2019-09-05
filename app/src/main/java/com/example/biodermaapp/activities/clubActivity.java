@@ -7,19 +7,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.recyclerview.widget.LinearLayoutManager;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.biodermaapp.BeneficiosActivity;
+import com.example.biodermaapp.CuponesActivity;
+import com.example.biodermaapp.HistorialActivity;
 import com.example.biodermaapp.R;
-import com.example.biodermaapp.ajustador.RecycleViewProductoDescuento;
 import com.example.biodermaapp.entidades.ClientePrueba;
 import com.example.biodermaapp.entidades.ProductoComprable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -28,8 +29,8 @@ import java.util.ArrayList;
 
 public class clubActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    Button btnBeneficios;
-    ImageButton btnNiveles,btnCupones,btnHistorial;
+
+    ImageButton btnNiveles,btnBack,btnBeneficios,btnCupones,btnHistorial;
     int BionCoins;
     private ClientePrueba cliente;
     private RecyclerView recyclerView;
@@ -44,12 +45,52 @@ public class clubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club);
 
-        btnNiveles = findViewById(R.id.btnNiveles);
+       btnBack = findViewById(R.id.btnBackto);
+       btnNiveles = findViewById(R.id.btnNiveles);
+       btnHistorial = findViewById(R.id.btnHistorial);
+       btnCupones = findViewById(R.id.btnCupones);
+       btnBeneficios = findViewById(R.id.btnBeneficios);
+
+
+
+       btnBack.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+
+           }
+       });
+
+
         btnNiveles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(clubActivity.this, BeneficiosActivity.class);
+                Intent intent = new Intent(clubActivity.this, NivelesActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btnCupones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(clubActivity.this, CuponesActivity.class);
+                startActivity(intent2);
+            }
+        });
+
+        btnHistorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(clubActivity.this, HistorialActivity.class);
+                startActivity(intent2);
+            }
+        });
+
+        btnBeneficios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(clubActivity.this, BeneficiosActivity.class);
+                startActivity(intent2);
             }
         });
 
