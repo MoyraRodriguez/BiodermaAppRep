@@ -8,6 +8,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/ic_linea_horizontal"
     android:backgroundTint="#334B68"
+    android:layout_gravity="center"
 
     android:layout_margin="5dp"
     android:clickable="true"
