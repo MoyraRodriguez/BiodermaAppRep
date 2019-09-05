@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.biodermaapp.R;
@@ -19,13 +20,23 @@ public class EditarPerfil extends AppCompatActivity {
     Dialog dialog;
 
     Button btnCerrarSesion, btnCerrarSesionPopUp, guardarCambios;
-    EditText correo, telefono, fechaNac,ubicación;
+    ImageButton backEditar;
+    EditText correo, telefono, fechaNac,ubicación, nombre;
     ImageView close;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_perfil);
+
+        backEditar = findViewById(R.id.flechaBackEditarPerfil);
+        backEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
 
         Initializate();
 
@@ -44,6 +55,7 @@ public class EditarPerfil extends AppCompatActivity {
 
     }
     public void Initializate(){
+        nombre = findViewById(R.id.etNombreEditar);
         correo = findViewById(R.id.editTextCambiarCorreo);
         telefono = findViewById(R.id.editTextCambiarCelular);
         fechaNac = findViewById(R.id.editTextCambiarFechaNacimiento);
@@ -52,11 +64,13 @@ public class EditarPerfil extends AppCompatActivity {
     }
     public void ChangeActivities(View view){
         Initializate();
+        final String nNombre = nombre.getText().toString();
         final String nCorreo = correo.getText().toString();
         final String nTelefono = telefono.getText().toString();
         final String nFechaNac = fechaNac.getText().toString();
         final String nUbicacion = ubicación.getText().toString();
         Intent intentChange = new Intent(EditarPerfil.this, MiCuenta.class);
+        intentChange.putExtra("Nuevo Nombre",nNombre);
         intentChange.putExtra("Nuevo Correo",nCorreo);
         intentChange.putExtra("Nuevo Telefono",nTelefono);
         intentChange.putExtra("Nueva FechaNac", nFechaNac);

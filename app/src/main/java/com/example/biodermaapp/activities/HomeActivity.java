@@ -70,7 +70,7 @@ public class HomeActivity extends AppCompatActivity {
                         break;
 
                     case R.id.Club:
-                        Intent intent5 = new Intent(HomeActivity.this,clubActivity.class);
+                        Intent intent5 = new Intent(HomeActivity.this, ClubActivity.class);
                         startActivity(intent5);
                         break;
                 }

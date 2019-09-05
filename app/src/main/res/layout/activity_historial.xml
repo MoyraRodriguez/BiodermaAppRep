@@ -27,21 +27,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="4dp"
-        android:text="Producto"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
-    <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="13dp"
         android:text="Precio del producto"
         android:textSize="18sp"
@@ -50,13 +39,38 @@
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="Producto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="Cantidad Comprada"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageButton
+        android:id="@+id/btnBackHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/NoColor"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_flecha_back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

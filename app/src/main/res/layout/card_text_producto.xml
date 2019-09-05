@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/principalBlue"
+        app:cardBackgroundColor="@color/com_facebook_primary_button_text_color"
         app:cardCornerRadius="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout

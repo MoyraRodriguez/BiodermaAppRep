@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,8 +23,9 @@ public class MiCuenta extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     Button EditarCuenta, CerrarSesion, CerrarSesionEnPopUp;
     ImageView close_pop_up;
+    ImageButton backbtn;
     TextView titulo, descripcion;
-    TextView correo, telef, fechaNac,lugar;
+    TextView correo, telef, fechaNac,lugar, nombreU;
     Dialog dialog;
 
 
@@ -36,11 +38,19 @@ public class MiCuenta extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         EditarCuenta = findViewById(R.id.buttonEditarCuenta);
         CerrarSesion = findViewById(R.id.buttonCerrarSesion);
+        nombreU = findViewById(R.id.nombreUsuario);
         correo = findViewById(R.id.tvCorreo);
         telef = findViewById(R.id.telefonoMICuenta);
         fechaNac = findViewById(R.id.fechaNacMICuenta);
         lugar = findViewById(R.id.lugarOrigenMICuenta);
+        backbtn = findViewById(R.id.btnBackMiCuenta);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
 
+            }
+        });
 
         CerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +72,7 @@ public class MiCuenta extends AppCompatActivity {
         Intent intent = getIntent();
 
         if(intent.getExtras() != null) {
+            nombreU.setText(intent.getExtras().getString("Nuevo Nombre"));
             correo.setText(intent.getExtras().getString("Nuevo Correo"));
             telef.setText(intent.getExtras().getString("Nuevo Telefono"));
             fechaNac.setText(intent.getExtras().getString("Nueva FechaNac"));
@@ -100,7 +111,7 @@ public class MiCuenta extends AppCompatActivity {
                         break;
 
                     case R.id.Club:
-                        Intent intent5 = new Intent(MiCuenta.this, clubActivity.class);
+                        Intent intent5 = new Intent(MiCuenta.this, ClubActivity.class);
                         startActivity(intent5);
                         break;
                 }

@@ -38,15 +38,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvNombreProductoComplementario" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/flechaBackProducto"
                 android:layout_width="65dp"
                 android:layout_height="62dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
                 android:background="@color/colorAccent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_flecha_back"
-                tools:ignore="VectorDrawableCompat"
-                tools:layout_editor_absoluteY="48dp" />
+                tools:ignore="VectorDrawableCompat" />
 
             <ImageView
                 android:id="@+id/imageProducto"
@@ -87,7 +88,7 @@
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.39"
-                app:layout_constraintStart_toEndOf="@+id/imageButton"
+                app:layout_constraintStart_toEndOf="@+id/flechaBackProducto"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView

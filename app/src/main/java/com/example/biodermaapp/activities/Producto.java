@@ -4,11 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,16 +22,20 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.biodermaapp.R.id.flechaBackProducto;
+
 public class Producto extends AppCompatActivity {
 
     ViewPager viewPager;
     public static TextView nombreProducto, dataProducto, consejos,nombreComplementario;
     public static ImageView imagenProducto, productoComplementario;
     public static Button buttonProductoComplementario;
+     public ImageButton btnBack;
     BottomNavigationView bottomNavigationView;
     AdapterTextProducto adapterProducto;
     List<String> productStrings = new ArrayList<>();
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +49,15 @@ public class Producto extends AppCompatActivity {
         imagenProducto = findViewById(R.id.imageProducto);
         productoComplementario = findViewById(R.id.imageProductoComplementario);
 
+        btnBack = findViewById(flechaBackProducto);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
@@ -96,7 +112,7 @@ public class Producto extends AppCompatActivity {
                         break;
 
                     case R.id.Club:
-                        Intent intent5 = new Intent(Producto.this, clubActivity.class);
+                        Intent intent5 = new Intent(Producto.this, ClubActivity.class);
                         startActivity(intent5);
                         break;
                 }

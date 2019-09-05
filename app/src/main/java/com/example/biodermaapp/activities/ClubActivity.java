@@ -24,7 +24,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
-public class clubActivity extends AppCompatActivity {
+public class ClubActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
     ImageButton btnNiveles,btnBack,btnBeneficios,btnCupones,btnHistorial;
@@ -53,7 +53,7 @@ public class clubActivity extends AppCompatActivity {
        btnBack.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-
+               finish();
 
            }
        });
@@ -62,7 +62,7 @@ public class clubActivity extends AppCompatActivity {
         btnNiveles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(clubActivity.this, NivelesActivity.class);
+                Intent intent = new Intent(ClubActivity.this, NivelesActivity.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +70,7 @@ public class clubActivity extends AppCompatActivity {
         btnCupones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(clubActivity.this, CuponesActivity.class);
+                Intent intent2 = new Intent(ClubActivity.this, CuponesActivity.class);
                 startActivity(intent2);
             }
         });
@@ -78,7 +78,7 @@ public class clubActivity extends AppCompatActivity {
         btnHistorial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(clubActivity.this, HistorialActivity.class);
+                Intent intent2 = new Intent(ClubActivity.this, HistorialActivity.class);
                 startActivity(intent2);
             }
         });
@@ -86,7 +86,7 @@ public class clubActivity extends AppCompatActivity {
         btnBeneficios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(clubActivity.this, BeneficiosActivity.class);
+                Intent intent2 = new Intent(ClubActivity.this, BeneficiosActivity.class);
                 startActivity(intent2);
             }
         });
@@ -123,25 +123,25 @@ public class clubActivity extends AppCompatActivity {
                 switch (Item.getItemId()) {
 
                     case R.id.cuenta:
-                        Intent intent1 = new Intent(clubActivity.this, MiCuenta.class);
+                        Intent intent1 = new Intent(ClubActivity.this, MiCuenta.class);
                         startActivity(intent1);
 
                         break;
 
                     case R.id.Producto:
 
-                        Intent intent2 = new Intent(clubActivity.this, ProductMenu.class);
+                        Intent intent2 = new Intent(ClubActivity.this, ProductMenu.class);
                         startActivity(intent2);
                         break;
 
                     case R.id.Scanner:
 
-                        Intent intent3 = new Intent(clubActivity.this, MiCuenta.class);
+                        Intent intent3 = new Intent(ClubActivity.this, MiCuenta.class);
                         startActivity(intent3);
                         break;
 
                     case R.id.Home:
-                        Intent intent4 = new Intent(clubActivity.this, HomeActivity.class);
+                        Intent intent4 = new Intent(ClubActivity.this, HomeActivity.class);
                         startActivity(intent4);
 
                         break;
@@ -202,6 +202,11 @@ public class clubActivity extends AppCompatActivity {
             DescripNivel.setText("Felicidades tienes el nivel mas alto");
 
         }
+
+
+    }
+
+    public void BackInCuenta(View view){
 
 
     }

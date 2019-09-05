@@ -20,7 +20,7 @@
             android:label="@string/title_activity_product_menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.NivelesActivity" />
-        <activity android:name=".activities.clubActivity" />
+        <activity android:name=".activities.ClubActivity" />
         <activity android:name=".activities.HomeActivity" />
         <activity android:name=".activities.Producto" />
         <activity android:name=".activities.EditarPerfil" />
