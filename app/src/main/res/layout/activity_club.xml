@@ -192,38 +192,45 @@
                 android:id="@+id/Orotxt"
                 android:layout_width="57dp"
                 android:layout_height="19dp"
-                android:layout_marginTop="26dp"
+                android:layout_marginStart="75dp"
 
+                android:layout_marginTop="26dp"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/sourcesanspro_bold"
                 android:text="Cupones"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
                 app:layout_constraintTop_toTopOf="@+id/linearLayout"
-                tools:layout_editor_absoluteX="214dp" />
+                app:layout_constraintVertical_bias="0.465" />
 
             <TextView
                 android:id="@+id/Platatxt"
                 android:layout_width="67dp"
                 android:layout_height="16dp"
-                android:layout_marginEnd="23dp"
+                android:layout_marginStart="31dp"
 
 
                 android:fontFamily="@font/sourcesanspro_bold"
                 android:text="Beneficios"
                 android:textAlignment="center"
                 android:textColor="#334D6B"
-                android:textSize="12.5dp"
+                android:textSize="12dp"
                 app:layout_constraintBottom_toBottomOf="@+id/Orotxt"
                 app:layout_constraintEnd_toStartOf="@+id/Orotxt"
-                app:layout_constraintTop_toTopOf="@+id/Orotxt" />
+                app:layout_constraintHorizontal_bias="0.798"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Orotxt"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/Platinotxt"
                 android:layout_width="49dp"
                 android:layout_height="16dp"
-                android:layout_marginStart="34dp"
+                android:layout_marginStart="33dp"
 
 
                 android:fontFamily="@font/sourcesanspro_bold"

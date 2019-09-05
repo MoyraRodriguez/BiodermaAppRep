@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.biodermaapp.R;
+import com.example.biodermaapp.ScannerActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MiCuenta extends AppCompatActivity {
@@ -69,13 +70,13 @@ public class MiCuenta extends AppCompatActivity {
 
                     case R.id.Producto:
 
-                        Intent intent2 = new Intent(MiCuenta.this, Producto.class);
+                        Intent intent2 = new Intent(MiCuenta.this, ProductMenu.class);
                         startActivity(intent2);
                         break;
 
                     case R.id.Scanner:
 
-                        Intent intent3 = new Intent(MiCuenta.this, MiCuenta.class);
+                        Intent intent3 = new Intent(MiCuenta.this, ScannerActivity.class);
                         startActivity(intent3);
                         break;
 
