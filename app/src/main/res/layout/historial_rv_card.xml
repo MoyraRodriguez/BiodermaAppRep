@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rvHistorial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/nombreProdRVHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textColor="@color/principalBlue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/precioProductoHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="@color/principalBlue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cantVecesCompradoHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="@color/principalBlue"
+        android:textSize="18sp" />
+</LinearLayout>

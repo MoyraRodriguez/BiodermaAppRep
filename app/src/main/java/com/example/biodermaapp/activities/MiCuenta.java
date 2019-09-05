@@ -23,6 +23,7 @@ public class MiCuenta extends AppCompatActivity {
     Button EditarCuenta, CerrarSesion, CerrarSesionEnPopUp;
     ImageView close_pop_up;
     TextView titulo, descripcion;
+    TextView correo, telef, fechaNac,lugar;
     Dialog dialog;
 
 
@@ -35,6 +36,11 @@ public class MiCuenta extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         EditarCuenta = findViewById(R.id.buttonEditarCuenta);
         CerrarSesion = findViewById(R.id.buttonCerrarSesion);
+        correo = findViewById(R.id.tvCorreo);
+        telef = findViewById(R.id.telefonoMICuenta);
+        fechaNac = findViewById(R.id.fechaNacMICuenta);
+        lugar = findViewById(R.id.lugarOrigenMICuenta);
+
 
         CerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +59,14 @@ public class MiCuenta extends AppCompatActivity {
             }
         });
 
+        Intent intent = getIntent();
+
+        if(intent.getExtras() != null) {
+            correo.setText(intent.getExtras().getString("Nuevo Correo"));
+            telef.setText(intent.getExtras().getString("Nuevo Telefono"));
+            fechaNac.setText(intent.getExtras().getString("Nueva FechaNac"));
+            lugar.setText(intent.getExtras().getString("Nueva Ubicacion"));
+        }
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(0);
@@ -100,6 +114,7 @@ public class MiCuenta extends AppCompatActivity {
 
 
     }
+
 
 
     public void ShowPopUpWaiting(){

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.biodermaapp.R;
@@ -17,7 +18,8 @@ public class EditarPerfil extends AppCompatActivity {
 
     Dialog dialog;
 
-    Button btnCerrarSesion, btnCerrarSesionPopUp;
+    Button btnCerrarSesion, btnCerrarSesionPopUp, guardarCambios;
+    EditText correo, telefono, fechaNac,ubicación;
     ImageView close;
 
     @Override
@@ -25,7 +27,7 @@ public class EditarPerfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_perfil);
 
-
+        Initializate();
 
 
         dialog = new Dialog(this);
@@ -39,6 +41,27 @@ public class EditarPerfil extends AppCompatActivity {
         });
 
 
+
+    }
+    public void Initializate(){
+        correo = findViewById(R.id.editTextCambiarCorreo);
+        telefono = findViewById(R.id.editTextCambiarCelular);
+        fechaNac = findViewById(R.id.editTextCambiarFechaNacimiento);
+        ubicación = findViewById(R.id.editTextCambiarLugarOrigen);
+        guardarCambios = (Button) findViewById(R.id.btnGuardar);
+    }
+    public void ChangeActivities(View view){
+        Initializate();
+        final String nCorreo = correo.getText().toString();
+        final String nTelefono = telefono.getText().toString();
+        final String nFechaNac = fechaNac.getText().toString();
+        final String nUbicacion = ubicación.getText().toString();
+        Intent intentChange = new Intent(EditarPerfil.this, MiCuenta.class);
+        intentChange.putExtra("Nuevo Correo",nCorreo);
+        intentChange.putExtra("Nuevo Telefono",nTelefono);
+        intentChange.putExtra("Nueva FechaNac", nFechaNac);
+        intentChange.putExtra("Nueva Ubicacion", nUbicacion);
+        startActivity(intentChange);
 
     }
 

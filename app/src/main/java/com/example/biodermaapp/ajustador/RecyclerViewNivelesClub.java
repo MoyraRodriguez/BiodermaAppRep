@@ -1,4 +1,4 @@
-package com.example.biodermaapp.activities;
+package com.example.biodermaapp.ajustador;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
