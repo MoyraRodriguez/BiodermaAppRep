@@ -4,13 +4,19 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.biodermaapp.R;
+import com.example.biodermaapp.ScannerActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class EditarPerfil extends AppCompatActivity {
 
@@ -23,6 +29,10 @@ public class EditarPerfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_perfil);
+
+
+
+
         dialog = new Dialog(this);
         btnCerrarSesion = (Button) findViewById(R.id.buttonCerrarSesion);
         btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +42,9 @@ public class EditarPerfil extends AppCompatActivity {
                 ShowPopUp();
             }
         });
+
+
+
     }
 
 

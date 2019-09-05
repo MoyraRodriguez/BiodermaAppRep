@@ -7,6 +7,7 @@
     tools:context=".activities.RegisterActivity">
 
     <EditText
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/textUsuario2"
         android:layout_width="307dp"
         android:layout_height="50dp"
@@ -24,7 +25,8 @@
 "
 
     <Button
-        android:fontFamily="@font/sourcesanspro_bold"
+
+        android:fontFamily="@font/sourcesanspro_semibold"
 
         android:id="@+id/buttonCancelar"
         android:layout_width="121dp"
@@ -39,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <Button
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_semibold"
 
         android:id="@+id/buttonIngresar"
         android:layout_width="121dp"
@@ -54,6 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <EditText
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/editTextContraseña"
         android:layout_width="307dp"
         android:layout_height="50dp"
@@ -69,6 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textUsuario2" />
 
     <EditText
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/editTextContraseña2"
         android:layout_width="307dp"
         android:layout_height="50dp"
@@ -96,7 +100,7 @@
         app:srcCompat="@drawable/ic_usuariologo" />
 
     <TextView
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_regular"
 
 
         android:id="@+id/textViewSesion4"
@@ -126,6 +130,7 @@
         app:srcCompat="@drawable/ic_bio_logo" />
 
     <EditText
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/editTextCorreo"
 
         android:layout_width="307dp"

@@ -87,8 +87,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="68dp"
-                android:fontFamily="@font/sourcesanspro_bold"
-                android:text="Productos"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:text="PRODUCTOS"
                 android:textColor="#334B68"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -109,12 +109,12 @@
             </androidx.viewpager.widget.ViewPager>
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_bold"
+                android:fontFamily="@font/sourcesanspro_semibold"
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Actualidad"
+                android:text="ACTUALIDAD"
                 android:textColor="#000"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -182,6 +182,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/editTextEnviarCorreo" />
 
             <TextView
+                android:fontFamily="@font/sourcesanspro_light"
+                android:textStyle="bold"
                 android:id="@+id/textView19"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

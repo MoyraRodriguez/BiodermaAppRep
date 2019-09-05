@@ -38,7 +38,7 @@
 
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_bold"
+                android:fontFamily="@font/sourcesanspro_semibold"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -261,21 +261,23 @@
 
 
             <TextView
-
                 android:id="@+id/SaldoBioCoins"
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:layout_width="137dp"
+
+                android:layout_height="46dp"
+                android:fontFamily="@font/sourcesanspro_light"
                 android:text="100 BC"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="35dp"
+                android:textSize="37dp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView7"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_bold"
+                android:fontFamily="@font/sourcesanspro_regular"
                 android:id="@+id/NombreNivel"
                 android:layout_width="106dp"
                 android:layout_height="32dp"
@@ -292,7 +294,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/Nivel" />
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_bold"
+                android:fontFamily="@font/sourcesanspro_regular"
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -329,7 +331,7 @@
                 app:srcCompat="@drawable/ic_bronceclub" />
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_bold"
+                android:fontFamily="@font/sourcesanspro_semibold"
                 android:id="@+id/CantidadCoins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -343,7 +345,8 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_black"
+                android:fontFamily="@font/sourcesanspro_light"
+                android:textStyle="bold"
                 android:id="@+id/DescNivel"
                 android:layout_width="203dp"
                 android:layout_height="39dp"

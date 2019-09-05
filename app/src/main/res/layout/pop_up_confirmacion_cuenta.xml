@@ -15,7 +15,7 @@
         android:id="@+id/close_pop_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_flecha_back"
+        android:src="@drawable/ic_cerrar_icono"
         android:layout_marginTop="7dp"
         android:layout_marginRight="7dp"
         android:elevation="5dp"
@@ -47,6 +47,7 @@
             </LinearLayout>
 
             <TextView
+                android:textColor="#334D6B"
                 android:id="@+id/titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,6 +90,7 @@
 
 
             <Button
+                android:fontFamily="@font/sourcesanspro_semibold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"

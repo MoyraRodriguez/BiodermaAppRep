@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/ic_flecha_back" />
 
     <TextView
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_semibold"
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,7 +69,8 @@
 
 
         android:background="@drawable/custom_button_borders"
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_light"
+        android:textStyle="bold"
 
 
         android:paddingLeft="60dp"
@@ -89,13 +90,15 @@
         android:background="@drawable/custom_button_borders"
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_light"
+        android:textStyle="bold"
 
 
 
         android:text="Button"
 
         android:textAlignment="textStart"
+
 
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,6 +107,8 @@
         app:layout_constraintTop_toBottomOf="@+id/Informacion" />
 
     <TextView
+        android:fontFamily="@font/sourcesanspro_light"
+        android:textStyle="bold"
         android:id="@+id/Informacion"
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -120,6 +125,8 @@
         app:layout_constraintTop_toBottomOf="@+id/Descuento1" />
 
     <TextView
+        android:fontFamily="@font/sourcesanspro_light"
+        android:textStyle="bold"
         android:id="@+id/Informacion2"
         android:layout_width="0dp"
         android:layout_height="100dp"

@@ -15,7 +15,7 @@
         android:id="@+id/cerrarPopUpSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_flecha_back"
+        android:src="@drawable/ic_cerrar_icono"
         android:layout_marginTop="7dp"
         android:layout_marginRight="7dp"
         android:elevation="5dp"
@@ -47,7 +47,8 @@
             </LinearLayout>
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_bold"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:textColor="#334D6B"
                 android:id="@+id/cerrarSesionText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +61,8 @@
                 />
 
             <TextView
-                android:fontFamily="@font/sourcesanspro_black"
+                android:fontFamily="@font/sourcesanspro_light"
+
                 android:id="@+id/textoDeCerrarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +77,7 @@
                 />
 
             <Button
-                android:fontFamily="@font/sourcesanspro_black"
+                android:fontFamily="@font/sourcesanspro_semibold"
                 android:id="@+id/buttonCerrarSesionPopUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -1,16 +1,20 @@
 package com.example.biodermaapp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.biodermaapp.R;
+import com.example.biodermaapp.ScannerActivity;
 import com.example.biodermaapp.ajustador.RVProductMenuAdapter;
 import com.example.biodermaapp.entidades.GamaProducto;
 import com.example.biodermaapp.entidades.ProductoComprable;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
@@ -28,9 +32,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.Menu;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ProductMenu extends AppCompatActivity
+
         implements NavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView bottomNavigationView;
 
     public ArrayList<ProductoComprable> productos = new ArrayList<>();
 
@@ -44,6 +51,51 @@ public class ProductMenu extends AppCompatActivity
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(3);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+
+                switch (Item.getItemId()) {
+
+                    case R.id.cuenta:
+                        Intent intent1 = new Intent(ProductMenu.this,MiCuenta.class);
+                        startActivity(intent1);
+                        break;
+
+                    case R.id.Producto:
+
+
+                        break;
+
+                    case R.id.Scanner:
+
+                        Intent intent3 = new Intent(ProductMenu.this, ScannerActivity.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.Home:
+                        Intent intent4 = new Intent(ProductMenu.this,HomeActivity.class);
+                        startActivity(intent4);
+
+                        break;
+
+                    case R.id.Club:
+                        Intent intent5 = new Intent(ProductMenu.this,clubActivity.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+
+
+                return false;
+            }
+        });
+
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -75,6 +127,8 @@ public class ProductMenu extends AppCompatActivity
         RVProductMenuAdapter rvAdapter = new RVProductMenuAdapter(this,productos);
         rvProductos.setLayoutManager(new GridLayoutManager(this,2));
         rvProductos.setAdapter(rvAdapter);
+
+
 
 
     }

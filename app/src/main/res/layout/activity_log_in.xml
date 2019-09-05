@@ -8,7 +8,7 @@
     tools:context=".activities.LogInActivity">
 
     <TextView
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_regular"
         android:id="@+id/textViewSesion"
         android:layout_width="130dp"
         android:layout_height="27dp"
@@ -48,6 +48,7 @@
         app:srcCompat="@drawable/ic_usuariologo" />
 
     <EditText
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/editTextContraseña"
         android:layout_width="307dp"
         android:layout_height="50dp"
@@ -74,17 +75,20 @@
         app:srcCompat="@drawable/ic_candado" />
 
     <CheckBox
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-10dp"
         android:layout_marginTop="12dp"
         android:text="Recuerdame"
+        android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/editTextContraseña"
         app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
 
     <Button
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_semibold"
         android:id="@+id/buttonlogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -97,6 +101,8 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
 
     <TextView
+        android:fontFamily="@font/sourcesanspro_light"
+        android:textStyle="bold"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,38 +115,41 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="164dp"
+        android:layout_width="157dp"
         android:layout_height="23dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/sourcesanspro_light"
         android:text="¿Olvidaste tu contraseña? "
         android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/buttonlogin"
         app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
 
     <Button
+
         android:id="@+id/BtnRecuperarCuenta"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="130dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="1dp"
+        android:layout_width="120dp"
+        android:layout_height="19dp"
         android:background="#ffff"
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_semibold"
         android:text="Recuperala aqui"
         android:textColor="#334B68"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnRegistrarse"
 
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="93dp"
-        android:layout_height="23dp"
+        android:layout_width="82dp"
+        android:layout_height="24dp"
         android:layout_marginStart="2dp"
         android:background="#ffff"
-        android:fontFamily="@font/sourcesanspro_bold"
+        android:fontFamily="@font/sourcesanspro_semibold"
         android:text="Registrate"
         android:textColor="#334B68"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
@@ -148,6 +157,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <EditText
+        android:fontFamily="@font/sourcesanspro_light"
         android:id="@+id/textUsuario"
         android:layout_width="307dp"
         android:layout_height="50dp"

@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 
 import com.example.biodermaapp.R;
+import com.example.biodermaapp.ScannerActivity;
 import com.example.biodermaapp.ajustador.AdapterCardView;
 import com.example.biodermaapp.entidades.ProductoComprable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -64,7 +65,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.Scanner:
 
-                        Intent intent3 = new Intent(HomeActivity.this,MiCuenta.class);
+                        Intent intent3 = new Intent(HomeActivity.this, ScannerActivity.class);
                         startActivity(intent3);
                         break;
 
