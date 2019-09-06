@@ -28,7 +28,7 @@ import android.view.Menu;
 
 import java.util.ArrayList;
 
-public class ProductMenu extends AppCompatActivity
+public class Productos extends AppCompatActivity
 
         implements NavigationView.OnNavigationItemSelectedListener {
     BottomNavigationView bottomNavigationView;
@@ -57,7 +57,7 @@ public class ProductMenu extends AppCompatActivity
                 switch (Item.getItemId()) {
 
                     case R.id.cuenta:
-                        Intent intent1 = new Intent(ProductMenu.this,MiCuenta.class);
+                        Intent intent1 = new Intent(Productos.this,MiCuenta.class);
                         startActivity(intent1);
                         break;
 
@@ -68,18 +68,18 @@ public class ProductMenu extends AppCompatActivity
 
                     case R.id.Scanner:
 
-                        Intent intent3 = new Intent(ProductMenu.this, ScannerActivity.class);
+                        Intent intent3 = new Intent(Productos.this, ScannerActivity.class);
                         startActivity(intent3);
                         break;
 
                     case R.id.Home:
-                        Intent intent4 = new Intent(ProductMenu.this,HomeActivity.class);
+                        Intent intent4 = new Intent(Productos.this,HomeActivity.class);
                         startActivity(intent4);
 
                         break;
 
                     case R.id.Club:
-                        Intent intent5 = new Intent(ProductMenu.this, ClubActivity.class);
+                        Intent intent5 = new Intent(Productos.this, ClubActivity.class);
                         startActivity(intent5);
                         break;
                 }

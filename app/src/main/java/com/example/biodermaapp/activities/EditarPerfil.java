@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.biodermaapp.R;
 
@@ -22,6 +24,7 @@ public class EditarPerfil extends AppCompatActivity {
     Button btnCerrarSesion, btnCerrarSesionPopUp, guardarCambios;
     ImageButton backEditar;
     EditText correo, telefono, fechaNac,ubicación, nombre;
+    RadioGroup genero;
     ImageView close;
 
     @Override
@@ -69,13 +72,19 @@ public class EditarPerfil extends AppCompatActivity {
         final String nTelefono = telefono.getText().toString();
         final String nFechaNac = fechaNac.getText().toString();
         final String nUbicacion = ubicación.getText().toString();
-        Intent intentChange = new Intent(EditarPerfil.this, MiCuenta.class);
-        intentChange.putExtra("Nuevo Nombre",nNombre);
-        intentChange.putExtra("Nuevo Correo",nCorreo);
-        intentChange.putExtra("Nuevo Telefono",nTelefono);
-        intentChange.putExtra("Nueva FechaNac", nFechaNac);
-        intentChange.putExtra("Nueva Ubicacion", nUbicacion);
-        startActivity(intentChange);
+
+        if(nombre.getText().toString().isEmpty()|| correo.getText().toString().isEmpty()|| telefono.getText().toString().isEmpty()
+                || fechaNac.getText().toString().isEmpty()|| ubicación.getText().toString().isEmpty()){
+            Toast.makeText(this, "Debe Llenar todos los datos", Toast.LENGTH_SHORT).show();
+        }else {
+            Intent intentChange = new Intent(EditarPerfil.this, MiCuenta.class);
+            intentChange.putExtra("Nuevo Nombre", nNombre);
+            intentChange.putExtra("Nuevo Correo", nCorreo);
+            intentChange.putExtra("Nuevo Telefono", nTelefono);
+            intentChange.putExtra("Nueva FechaNac", nFechaNac);
+            intentChange.putExtra("Nueva Ubicacion", nUbicacion);
+            startActivity(intentChange);
+        }
 
     }
 

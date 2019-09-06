@@ -1,7 +1,7 @@
 package com.example.biodermaapp.ajustador;
 
 import android.content.Context;
-import android.content.Intent;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.biodermaapp.activities.Producto;
 import com.example.biodermaapp.R;
 import com.example.biodermaapp.entidades.ProductoComprable;
 

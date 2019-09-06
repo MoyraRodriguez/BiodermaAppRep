@@ -94,7 +94,7 @@ public class MiCuenta extends AppCompatActivity {
 
                     case R.id.Producto:
 
-                        Intent intent2 = new Intent(MiCuenta.this, ProductMenu.class);
+                        Intent intent2 = new Intent(MiCuenta.this, Productos.class);
                         startActivity(intent2);
                         break;
 

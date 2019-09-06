@@ -24,7 +24,7 @@ import java.util.List;
 
 import static com.example.biodermaapp.R.id.flechaBackProducto;
 
-public class Producto extends AppCompatActivity {
+public class ProductoActivity extends AppCompatActivity {
 
     ViewPager viewPager;
     public static TextView nombreProducto, dataProducto, consejos,nombreComplementario;
@@ -89,7 +89,7 @@ public class Producto extends AppCompatActivity {
                 switch (Item.getItemId()) {
 
                     case R.id.cuenta:
-                        Intent intent = new Intent(Producto.this, MiCuenta.class);
+                        Intent intent = new Intent(ProductoActivity.this, MiCuenta.class);
                         startActivity(intent);
 
                         break;
@@ -101,18 +101,18 @@ public class Producto extends AppCompatActivity {
 
                     case R.id.Scanner:
 
-                        Intent intent3 = new Intent(Producto.this, MiCuenta.class);
+                        Intent intent3 = new Intent(ProductoActivity.this, MiCuenta.class);
                         startActivity(intent3);
                         break;
 
                     case R.id.Home:
-                        Intent intent4 = new Intent(Producto.this, HomeActivity.class);
+                        Intent intent4 = new Intent(ProductoActivity.this, HomeActivity.class);
                         startActivity(intent4);
 
                         break;
 
                     case R.id.Club:
-                        Intent intent5 = new Intent(Producto.this, ClubActivity.class);
+                        Intent intent5 = new Intent(ProductoActivity.this, ClubActivity.class);
                         startActivity(intent5);
                         break;
                 }

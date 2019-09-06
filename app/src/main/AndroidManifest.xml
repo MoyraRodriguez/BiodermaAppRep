@@ -16,13 +16,13 @@
         <activity android:name=".activities.HistorialActivity" />
         <activity android:name=".activities.ScannerActivity" />
         <activity
-            android:name=".activities.ProductMenu"
+            android:name=".activities.Productos"
             android:label="@string/title_activity_product_menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.NivelesActivity" />
         <activity android:name=".activities.ClubActivity" />
         <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.Producto" />
+        <activity android:name=".activities.ProductoActivity" />
         <activity android:name=".activities.EditarPerfil" />
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.MiCuenta" />

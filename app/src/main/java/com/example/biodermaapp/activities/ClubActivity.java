@@ -130,7 +130,7 @@ public class ClubActivity extends AppCompatActivity {
 
                     case R.id.Producto:
 
-                        Intent intent2 = new Intent(ClubActivity.this, ProductMenu.class);
+                        Intent intent2 = new Intent(ClubActivity.this, Productos.class);
                         startActivity(intent2);
                         break;
 
