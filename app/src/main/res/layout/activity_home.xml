@@ -66,12 +66,29 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView18"
                 app:srcCompat="@drawable/ic_biodema_logo_3" />
 
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/flipper"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/flipper"
+                app:srcCompat="@drawable/ic_flecha2" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/flipper"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/flipper"
+                app:srcCompat="@drawable/ic_flecha1" />
+
             <technolifestyle.com.imageslider.FlipperLayout
                 android:id="@+id/flipper"
 
                 android:layout_width="350dp"
                 android:layout_height="500dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="45dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -96,11 +113,31 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/flipper" />
 
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:srcCompat="@drawable/ic_flecha2" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+                app:layout_constraintEnd_toEndOf="@+id/viewPager"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:srcCompat="@drawable/ic_flecha1" />
+
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="0dp"
                 android:layout_height="400dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -121,14 +158,36 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/viewPager" />
 
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/viewPagerActualidad"
+                app:srcCompat="@drawable/ic_flecha2" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/viewPagerActualidad"
+                app:srcCompat="@drawable/ic_flecha1" />
+
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPagerActualidad"
                 android:layout_width="0dp"
                 android:layout_height="400dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                app:layout_constraintTop_toBottomOf="@+id/textView17" >
+
+            </androidx.viewpager.widget.ViewPager>
 
             <EditText
                 android:id="@+id/editTextEnviarCorreo"

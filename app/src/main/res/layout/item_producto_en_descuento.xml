@@ -105,7 +105,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imagenProductoDescuento"
 
-                app:srcCompat="@drawable/ic_bronceclub" />
+                app:srcCompat="@drawable/ic_club_cupones" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
