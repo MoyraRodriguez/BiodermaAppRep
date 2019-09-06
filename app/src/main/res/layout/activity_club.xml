@@ -27,10 +27,12 @@
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -107,7 +109,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="679dp" />
+                tools:layout_editor_absoluteY="579dp" />
 
 
             <LinearLayout
@@ -197,7 +199,7 @@
                 android:layout_height="19dp"
                 android:layout_marginStart="75dp"
 
-                android:layout_marginTop="26dp"
+                android:layout_marginTop="44dp"
                 android:fontFamily="@font/sourcesanspro_bold"
                 android:text="Cupones"
                 android:textAlignment="center"
@@ -213,7 +215,7 @@
                 android:id="@+id/Platatxt"
                 android:layout_width="67dp"
                 android:layout_height="16dp"
-                android:layout_marginStart="27dp"
+                android:layout_marginStart="28dp"
 
 
                 android:fontFamily="@font/sourcesanspro_bold"
