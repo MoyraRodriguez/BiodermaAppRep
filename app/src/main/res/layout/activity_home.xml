@@ -99,19 +99,23 @@
                 android:id="@+id/imageView30"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/viewPager"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView15"
-                app:srcCompat="@drawable/ic_flecha2" />
+                app:layout_constraintStart_toStartOf="@+id/viewPager"
+                app:layout_constraintTop_toTopOf="@+id/viewPager"
+                app:srcCompat="@drawable/ic_flecha2"
+                tools:visibility="visible" />
 
             <ImageView
                 android:id="@+id/imageView31"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/viewPager"
                 app:layout_constraintEnd_toEndOf="@+id/viewPager"
                 app:layout_constraintTop_toBottomOf="@+id/textView15"
-                app:srcCompat="@drawable/ic_flecha1" />
+                app:srcCompat="@drawable/ic_flecha1"
+                tools:visibility="visible" />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
@@ -144,19 +148,23 @@
                 android:id="@+id/imageView32"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:visibility="visible"
                 app:layout_constraintBottom_toTopOf="@+id/textView18"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/viewPagerActualidad"
-                app:srcCompat="@drawable/ic_flecha2" />
+                app:srcCompat="@drawable/ic_flecha2"
+                tools:visibility="visible" />
 
             <ImageView
                 android:id="@+id/imageView33"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:visibility="visible"
                 app:layout_constraintBottom_toTopOf="@+id/textView18"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/viewPagerActualidad"
-                app:srcCompat="@drawable/ic_flecha1" />
+                app:srcCompat="@drawable/ic_flecha1"
+                tools:visibility="visible" />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPagerActualidad"
