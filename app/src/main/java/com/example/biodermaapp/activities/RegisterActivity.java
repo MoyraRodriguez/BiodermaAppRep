@@ -22,6 +22,8 @@ import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
@@ -145,7 +147,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void InitializateFields(){
-        userET = findViewById(R.id.textUsuario2);
+        userET =  findViewById(R.id.textUsuario2);
         passwordET = findViewById(R.id.editTextContraseña);
         confirmpswET = findViewById(R.id.editTextContraseña2);
         emailET = findViewById(R.id.editTextCorreo);
@@ -193,13 +195,13 @@ public class RegisterActivity extends AppCompatActivity {
     }
     private void CreateNewAcount(){
         InitializateFields();
-        String email = emailET.getText().toString();
-        String password = passwordET.getText().toString();
+        String email = emailET.getEditableText().toString();
+        String password = passwordET.getEditableText().toString();
         loadingBar.setTitle("Creando Cuenta...");
         loadingBar.setMessage("Espere por favor...");
         loadingBar.setCanceledOnTouchOutside(true);
         loadingBar.show();
-        mAuth.createUserWithEmailAndPassword(password,email).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
