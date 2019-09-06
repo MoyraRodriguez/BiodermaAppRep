@@ -66,24 +66,6 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView18"
                 app:srcCompat="@drawable/ic_biodema_logo_3" />
 
-            <ImageView
-                android:id="@+id/imageView34"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/flipper"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/flipper"
-                app:srcCompat="@drawable/ic_flecha2" />
-
-            <ImageView
-                android:id="@+id/imageView35"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/flipper"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/flipper"
-                app:srcCompat="@drawable/ic_flecha1" />
-
             <technolifestyle.com.imageslider.FlipperLayout
                 android:id="@+id/flipper"
 
