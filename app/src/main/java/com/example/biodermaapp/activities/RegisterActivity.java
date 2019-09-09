@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
     private ProgressDialog  loadingBar;
     private CallbackManager mCallbackManager;
     private static final String TAG = "FACELOG";
-    //escribimos el nombre de la nueva rama que vamos a crear
+    //escribimos el nombre de la nueva rama que vamos a crear(CUIDADO QUE SI UNA RAMA TIENE EL MISMO
     private static final String USUARIO = "users";
 
     @Override
