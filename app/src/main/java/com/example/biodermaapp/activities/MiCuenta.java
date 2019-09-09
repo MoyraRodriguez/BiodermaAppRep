@@ -15,9 +15,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.biodermaapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MiCuenta extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -27,7 +30,7 @@ public class MiCuenta extends AppCompatActivity {
     TextView titulo, descripcion;
     TextView correo, telef, fechaNac,lugar, nombreU;
     Dialog dialog;
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,9 +142,17 @@ public class MiCuenta extends AppCompatActivity {
         CerrarSesionEnPopUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cerrar = new Intent(MiCuenta.this, LogInActivity.class);
-                startActivity(cerrar);
+                mAuth = FirebaseAuth.getInstance();
+                FirebaseUser user = mAuth.getCurrentUser();
 
+                if(user !=null) {
+                    mAuth.signOut();
+                    startActivity(new Intent(MiCuenta.this, LogInActivity.class));
+                }
+                else{
+                    Toast.makeText(MiCuenta.this, "No hay sesion que cerrar", Toast.LENGTH_SHORT).show();
+                }
+          
             }
         });
 

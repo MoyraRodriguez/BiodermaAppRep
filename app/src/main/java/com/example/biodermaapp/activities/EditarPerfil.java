@@ -16,6 +16,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.biodermaapp.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class EditarPerfil extends AppCompatActivity {
 
@@ -26,11 +28,14 @@ public class EditarPerfil extends AppCompatActivity {
     EditText correo, telefono, fechaNac,ubicación, nombre;
     RadioGroup genero;
     ImageView close;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_perfil);
+
+
 
         backEditar = findViewById(R.id.flechaBackEditarPerfil);
         backEditar.setOnClickListener(new View.OnClickListener() {
@@ -104,7 +109,16 @@ public class EditarPerfil extends AppCompatActivity {
         btnCerrarSesionPopUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EditarPerfil.this, LogInActivity.class));
+                mAuth = FirebaseAuth.getInstance();
+                FirebaseUser user = mAuth.getCurrentUser();
+
+                if(user !=null) {
+                    mAuth.signOut();
+                    startActivity(new Intent(EditarPerfil.this, LogInActivity.class));
+                }
+                else{
+                    Toast.makeText(EditarPerfil.this, "No hay sesion que cerrar", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
