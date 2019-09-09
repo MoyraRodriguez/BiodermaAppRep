@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.biodermaapp.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class LogInActivity extends AppCompatActivity {
 
@@ -40,10 +42,18 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     private void GotoIngresar(){
+
         BtnIngresar = findViewById(R.id.buttonlogin);
+
         BtnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
+
+
+
                 startActivity(new Intent(LogInActivity.this,HomeActivity.class));
             }
         });

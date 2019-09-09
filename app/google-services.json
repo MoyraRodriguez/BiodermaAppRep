@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "1026454039867",
-    "firebase_url": "https://bioderma-app-fb.firebaseio.com",
-    "project_id": "bioderma-app-fb",
-    "storage_bucket": "bioderma-app-fb.appspot.com"
+    "project_number": "161712523204",
+    "firebase_url": "https://bioderma-catalog-test.firebaseio.com",
+    "project_id": "bioderma-catalog-test",
+    "storage_bucket": "bioderma-catalog-test.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1026454039867:android:ae9ee5e96723c048",
+        "mobilesdk_app_id": "1:161712523204:android:42ed165453b7446676c691",
         "android_client_info": {
           "package_name": "com.example.biodermaapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1026454039867-qmvardi730pijkgagmu7umigocao7dog.apps.googleusercontent.com",
+          "client_id": "161712523204-mbrqqqf1kff9hqutctj6eei5k53mncrr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.biodermaapp",
-            "certificate_hash": "85bc51496adbdf539171e9255d77147ab2160fdb"
+            "certificate_hash": "cacd00261e7b95ef86839dfb89a314b7a595b30a"
           }
         },
         {
-          "client_id": "1026454039867-fsi13alnqc35e64r7r4g8onvr4coicib.apps.googleusercontent.com",
+          "client_id": "161712523204-37i7rtrshottvkjcfocfs9ffh7ph7lc6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAyT9pCwGBS8hGd63iAUgiDl1Nc0m_fI1A"
+          "current_key": "AIzaSyCZrzrJN0DFFsHyNDsPwD9FKx7ni36bmew"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1026454039867-fsi13alnqc35e64r7r4g8onvr4coicib.apps.googleusercontent.com",
+              "client_id": "161712523204-37i7rtrshottvkjcfocfs9ffh7ph7lc6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

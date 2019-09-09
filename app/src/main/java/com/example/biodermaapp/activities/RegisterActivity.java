@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.biodermaapp.R;
+import com.example.biodermaapp.entidades.ClientePrueba;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -29,9 +30,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
-    private EditText userET, passwordET,confirmpswET,emailET;
+    private EditText userET, passwordET,confirmpswET,emailET,txtFecha,txtTelefono;
     private Button ingresar, cancelar;
     private String pswError = "Debe de ingresar la misma contraseña y llenar ambas casillas.La contraseña debe tener entre 8 y 12 caracteres";
     private String userError = "El nombre de usuario debe tener entre 8 y 16 caracteres";
@@ -42,6 +45,9 @@ public class RegisterActivity extends AppCompatActivity {
     private ProgressDialog  loadingBar;
     private CallbackManager mCallbackManager;
     private static final String TAG = "FACELOG";
+    //escribimos el nombre de la nueva rama que vamos a crear
+    private static final String USUARIO = "users";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +57,20 @@ public class RegisterActivity extends AppCompatActivity {
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //llamamos al constructor cliente prueba y le pasamos los parametros creados
+                ClientePrueba clientePrueba = new ClientePrueba(userET.getText().toString().trim(),
+                        passwordET.getText().toString().trim(),emailET.getText().toString().trim(),txtFecha.getText().toString().trim(),txtTelefono.getText().toString().trim());
+
+                //esto lo usamos para siempre para que la database funcione
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference reference = database.getReference(USUARIO);
+
+                reference.push().setValue(clientePrueba);
+
+
+
+
                 AceptUser();
                 AceptEmail();
                 AceptPassword();
@@ -66,7 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        FBLogin();
+       FBLogin();
 
     }
 
@@ -103,7 +123,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
-       if(currentUser != null) updateUI();
+      // if(currentUser != null) updateUI();
     }
 
     private void updateUI() {
@@ -153,6 +173,8 @@ public class RegisterActivity extends AppCompatActivity {
         emailET = findViewById(R.id.editTextCorreo);
         ingresar = findViewById(R.id.buttonIngresar);
         cancelar = findViewById(R.id.buttonCancelar);
+        txtFecha = findViewById(R.id.txtFecha);
+        txtTelefono = findViewById(R.id.txtCelular);
         loadingBar = new ProgressDialog(this);
     }
     private void AceptUser(){
@@ -207,7 +229,14 @@ public class RegisterActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Toast.makeText(RegisterActivity.this, "Cuenta creada satisfactoriamente", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
+
+
+
                     startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
+
+
+
+
                 }else {
                     String mess = task.getException().toString();
                     Toast.makeText(RegisterActivity.this, "Error: " + mess, Toast.LENGTH_SHORT).show();

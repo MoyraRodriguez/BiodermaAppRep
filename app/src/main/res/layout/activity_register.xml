@@ -26,32 +26,34 @@
 
     <Button
 
-        android:fontFamily="@font/sourcesanspro_semibold"
-
         android:id="@+id/buttonCancelar"
+
         android:layout_width="121dp"
         android:layout_height="52dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="200dp"
         android:background="@drawable/ic_fondolleno"
+        android:fontFamily="@font/sourcesanspro_semibold"
         android:text="CANCELAR"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="@+id/editTextCorreo"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextCorreo"
         app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <Button
-        android:fontFamily="@font/sourcesanspro_semibold"
-
         android:id="@+id/buttonIngresar"
+
         android:layout_width="121dp"
         android:layout_height="52dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/ic_fondolleno"
+        android:fontFamily="@font/sourcesanspro_semibold"
         android:text="INGRESAR"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="@+id/editTextCorreo"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
@@ -100,20 +102,21 @@
         app:srcCompat="@drawable/ic_usuariologo" />
 
     <TextView
-        android:fontFamily="@font/sourcesanspro_regular"
-
-
         android:id="@+id/textViewSesion4"
+
+
         android:layout_width="101dp"
         android:layout_height="26dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="12dp"
         android:background="@color/colorAccent"
+        android:fontFamily="@font/sourcesanspro_regular"
         android:paddingLeft="10dp"
         android:text="Registrate"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
@@ -187,11 +190,41 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCancelar" /><![CDATA[
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancelar" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefono"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCorreo"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
+
+    <EditText
+        android:id="@+id/txtFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Fecha de nacimiento"
+        app:layout_constraintEnd_toEndOf="@+id/txtCelular"
+        app:layout_constraintStart_toStartOf="@+id/txtCelular"
+        app:layout_constraintTop_toBottomOf="@+id/txtCelular" /><![CDATA[
+
+
+
+
 
     "
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp" />
+
+
 
 ]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

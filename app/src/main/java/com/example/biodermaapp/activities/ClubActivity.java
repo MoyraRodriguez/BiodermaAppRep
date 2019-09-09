@@ -93,7 +93,7 @@ public class ClubActivity extends AppCompatActivity {
 
 
         SubidaDeNivel();
-        cliente = new ClientePrueba("Pepe", "jojojojo22","elpeposo@app.com");
+        cliente = new ClientePrueba("Pepe", "jojojojo22","elpeposo@app.com","40490","9458458");
         cliente.setBioCoins(1200);
         BionCoins = cliente.getBioCoins();
         p1 = new ProductoComprable("Papas",R.drawable.sensibio_eye,0.15,12.2,"Para el cuerpo");

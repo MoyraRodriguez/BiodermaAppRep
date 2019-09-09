@@ -5,7 +5,7 @@ public class ClientePrueba {
     private String password;
     private String correoElectronico;
     private String telefonoCelular;
-    private Genero generoCliente;// para poder identificar que productos son para cada genero
+
     private String fechaNac;
     private String lugarResidencia;
     private int BioCoins;
@@ -18,16 +18,18 @@ public class ClientePrueba {
         this.password = password;
         this.correoElectronico = correoElectronico;
         this.telefonoCelular = telefonoCelular;
-        this.generoCliente = generoCliente;
+
         this.fechaNac = fechaNac;
         this.lugarResidencia = lugarResidencia;
         this.BioCoins = BioCoins;
     }
     //este es el constructor simplificado
-    public ClientePrueba(String nomUsuario, String password, String correoElectronico) {
+    public ClientePrueba(String nomUsuario, String password, String correoElectronico, String fechaNac, String telefonoCelular) {
         this.nomUsuario = nomUsuario;
         this.password = password;
         this.correoElectronico = correoElectronico;
+        this.fechaNac = fechaNac;
+        this.telefonoCelular = telefonoCelular;
     }
 
     public String getNomUsuario() {
@@ -62,13 +64,7 @@ public class ClientePrueba {
         this.telefonoCelular = telefonoCelular;
     }
 
-    public Genero getGeneroCliente() {
-        return generoCliente;
-    }
 
-    public void setGeneroCliente(Genero generoCliente) {
-        this.generoCliente = generoCliente;
-    }
 
     public String getFechaNac() {
         return fechaNac;
