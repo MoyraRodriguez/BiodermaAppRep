@@ -42,6 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
     private boolean userOk = false;
     private boolean emailOk = false;
     private FirebaseAuth mAuth;
+    private FirebaseUser user;
     private ProgressDialog  loadingBar;
     private CallbackManager mCallbackManager;
     private static final String TAG = "FACELOG";
@@ -54,6 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         InitializateFields();
         mAuth =  FirebaseAuth.getInstance();
+        user = mAuth.getCurrentUser();
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,7 +78,12 @@ public class RegisterActivity extends AppCompatActivity {
                 AceptPassword();
 
                 if(userOk && pswrdOk && emailOk){
-                    CreateNewAcount();
+
+                    if(user == null) {
+                        CreateNewAcount();
+                    } else{
+                        Toast.makeText(RegisterActivity.this, "Ya hay un usuario registrado, cierre sesion para crear una cuenta", Toast.LENGTH_SHORT).show();
+                    }
 
                 } else {
                     AceptUser();

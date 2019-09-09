@@ -152,7 +152,7 @@ public class MiCuenta extends AppCompatActivity {
                 else{
                     Toast.makeText(MiCuenta.this, "No hay sesion que cerrar", Toast.LENGTH_SHORT).show();
                 }
-          
+
             }
         });
 
