@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "161712523204-ectn9ja20c4d1h9ur77i7pmu2g86daf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.biodermaapp",
+            "certificate_hash": "5c407c760b18a398957d63e338209ed3292a0daa"
+          }
+        },
+        {
           "client_id": "161712523204-mbrqqqf1kff9hqutctj6eei5k53mncrr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
