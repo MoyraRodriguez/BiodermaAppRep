@@ -69,10 +69,6 @@ public class RegisterActivity extends AppCompatActivity {
                 DatabaseReference reference = database.getReference(USUARIO);
 
                 reference.push().setValue(clientePrueba);
-
-
-
-
                 AceptUser();
                 AceptEmail();
                 AceptPassword();

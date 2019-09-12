@@ -33,13 +33,8 @@ public class RecuperarCuentaActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //si el correo es aceptado CorreoConfirmado pasa a ser true
-
-
-
                     ShowPopUpWaiting();
-
                     ShowPopUpActive();
-
             }
         });
     }

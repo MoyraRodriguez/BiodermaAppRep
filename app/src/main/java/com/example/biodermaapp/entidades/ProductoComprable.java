@@ -15,6 +15,10 @@ public class ProductoComprable {
     private double fechaLimiteDescuento;
     private String consejos;
 
+    public ProductoComprable()
+    {
+
+    }
 
     public ProductoComprable(String nombreProducto, int imagen, String indicaciones, String beneficios, String informacion,
                              String formato, GamaProducto gama, double descuentoProducto, double fechaLimiteDescuento) {
@@ -146,4 +150,6 @@ public class ProductoComprable {
     public void setConsejos(String consejos) {
         this.consejos = consejos;
     }
+
+
 }

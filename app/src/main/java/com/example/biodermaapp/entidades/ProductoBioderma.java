@@ -1,5 +1,6 @@
 package com.example.biodermaapp.entidades;
 
+import java.util.List;
 import java.util.Objects;
 
 public class ProductoBioderma {
@@ -11,10 +12,10 @@ public class ProductoBioderma {
     private  boolean catalog;
     private String description;
     private String extraInformation;
-    private String[] formats;
-    private ImageLink[] imageLinks;
-    private MediaLink[] mediaLinks;
-    private String[] tags;
+    private List<String> formats;
+    private List<ImageLink> imageLinks;
+    private List<MediaLink> mediaLinks;
+    private List<String> tags;
     private String title;
     private String titleSlug;
     private GamaProducto type;
@@ -22,13 +23,15 @@ public class ProductoBioderma {
     private String userInstructions;
 
     public ProductoBioderma() {
+
     }
 
-    public ProductoBioderma(boolean active, boolean ar, String benefits,
+    public ProductoBioderma(String id, boolean active, boolean ar, String benefits,
                             boolean catalog, String description, String extraInformation,
-                            String[] formats, ImageLink[] imageLinks, MediaLink[] mediaLinks,
-                            String[] tags, String title, String titleSlug, GamaProducto type,
+                            List<String> formats, List<ImageLink> imageLinks, List<MediaLink> mediaLinks,
+                            List<String> tags, String title, String titleSlug, GamaProducto type,
                             String userAdvice, String userInstructions) {
+        this.id = id;
         this.active = active;
         this.ar = ar;
         this.benefits = benefits;
@@ -102,35 +105,35 @@ public class ProductoBioderma {
         this.extraInformation = extraInformation;
     }
 
-    public String[] getFormats() {
+    public List<String> getFormats() {
         return formats;
     }
 
-    public void setFormats(String[] formats) {
+    public void setFormats(List<String> formats) {
         this.formats = formats;
     }
 
-    public ImageLink[] getImageLinks() {
+    public List<ImageLink> getImageLinks() {
         return imageLinks;
     }
 
-    public void setImageLinks(ImageLink[] imageLinks) {
+    public void setImageLinks(List<ImageLink> imageLinks) {
         this.imageLinks = imageLinks;
     }
 
-    public MediaLink[] getMediaLinks() {
+    public List<MediaLink> getMediaLinks() {
         return mediaLinks;
     }
 
-    public void setMediaLinks(MediaLink[] mediaLinks) {
+    public void setMediaLinks(List<MediaLink> mediaLinks) {
         this.mediaLinks = mediaLinks;
     }
 
-    public String[] getTags() {
+    public List<String> getTags() {
         return tags;
     }
 
-    public void setTags(String[] tags) {
+    public void setTags(List<String> tags) {
         this.tags = tags;
     }
 

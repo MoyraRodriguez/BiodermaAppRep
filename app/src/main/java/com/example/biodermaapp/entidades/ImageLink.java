@@ -3,10 +3,10 @@ package com.example.biodermaapp.entidades;
 public class ImageLink {
 
     private String key;
-    private int storagepath;
+    private String storagepath;
     private String uri;
 
-    public ImageLink(String key, int storagepath, String uri) {
+    public ImageLink(String key, String storagepath, String uri) {
         this.key = key;
         this.storagepath = storagepath;
         this.uri = uri;
@@ -23,11 +23,11 @@ public class ImageLink {
         this.key = key;
     }
 
-    public int getStoragepath() {
+    public String getStoragepath() {
         return storagepath;
     }
 
-    public void setStoragepath(int storagepath) {
+    public void setStoragepath(String storagepath) {
         this.storagepath = storagepath;
     }
 

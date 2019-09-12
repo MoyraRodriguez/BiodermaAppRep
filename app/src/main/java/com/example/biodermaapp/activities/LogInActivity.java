@@ -19,12 +19,9 @@ public class LogInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-
         GotoRecuperarCuenta();
         GotoRegistrarse();
         GotoIngresar();
-
-
     }
 
     private void GotoRecuperarCuenta(){
@@ -38,7 +35,6 @@ public class LogInActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     private void GotoIngresar(){
@@ -48,12 +44,6 @@ public class LogInActivity extends AppCompatActivity {
         BtnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
-
-
-
                 startActivity(new Intent(LogInActivity.this,HomeActivity.class));
             }
         });
@@ -67,6 +57,5 @@ public class LogInActivity extends AppCompatActivity {
                 startActivity(new Intent(LogInActivity.this,RegisterActivity.class));
             }
         });
-
     }
 }
